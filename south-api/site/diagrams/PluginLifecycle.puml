@@ -1,0 +1,6 @@
+@startuml PluginLifecycle
+!include ../materia-theme.puml
+hide empty description
+[*] -->Unloaded
+Unloaded --> Loaded : load_plugin
+@endum

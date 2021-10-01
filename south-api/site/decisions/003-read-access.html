@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="VDW-Forschungsinstitut e.V." name="author"/>
+<link href="https://transformationengine.umati.org/decisions/003-read-access.html" rel="canonical"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>003 Granularity of read access of data clients - umati Transformation Engine</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<script defer="" src="../js/jquery-1.10.2.min.js"></script>
+<script defer="" src="../js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="../pdf/TEK-SouthAPI.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
+<body>
+<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="../index.html">umati Transformation Engine</a>
+<!-- Expander button -->
+<button class="navbar-toggler" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse" id="navbar-collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li class="navitem">
+<a class="nav-link" href="../index.html">Overview</a>
+</li>
+<li class="dropdown active">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Decisions <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="001-dataclient-interface-type.html">001 Type of the interface (Socket, shared library or managed code)</a>
+</li>
+<li>
+<a class="dropdown-item" href="002-api-artifacts.html">002 API artifacts</a>
+</li>
+<li>
+<a class="dropdown-item active" href="003-read-access.html">003 Granularity of read access of data clients</a>
+</li>
+<li>
+<a class="dropdown-item" href="004-threading-model.html">004 Data client threading model</a>
+</li>
+<li>
+<a class="dropdown-item" href="005-error-codes.html">005 Error codes definition</a>
+</li>
+<li>
+<a class="dropdown-item" href="006-text-encoding.html">006 How should text values be encoded?</a>
+</li>
+<li>
+<a class="dropdown-item" href="007-memory-allocation.html">007 What are the rules for memory management?</a>
+</li>
+<li>
+<a class="dropdown-item" href="008-configuration-structure.html">008 What are the common requirements for the data client configuration?</a>
+</li>
+<li>
+<a class="dropdown-item" href="009-data-client-model-access.html">009 data client model access</a>
+</li>
+<li>
+<a class="dropdown-item" href="010-opc-ua-data-source-integration.html">010 OPC UA data source integration</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" data-target="#mkdocs_search_modal" data-toggle="modal" href="#">
+<i class="fa fa-search"></i> Search
+                            </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="002-api-artifacts.html" rel="prev">
+<i class="fa fa-arrow-left"></i> Previous
+                                </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="004-threading-model.html" rel="next">
+                                    Next <i class="fa fa-arrow-right"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+<div class="navbar-header">
+<button class="navbar-toggler collapsed" data-target="#toc-collapse" data-toggle="collapse" title="Table of Contents" type="button">
+<span class="fa fa-angle-down"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse card bg-secondary" id="toc-collapse">
+<ul class="nav flex-column">
+<li class="nav-item" data-level="1"><a class="nav-link" href="#003-granularity-of-read-access-of-data-clients">003 Granularity of read access of data clients</a>
+<ul class="nav flex-column">
+<li class="nav-item" data-level="2"><a class="nav-link" href="#context-and-problem-statement">Context and Problem Statement</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#decision-drivers">Decision Drivers</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#considered-options">Considered Options</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#decision-outcome">Decision Outcome</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#pros-and-cons-of-the-options">Pros and Cons of the Options</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div></div>
+<div class="col-md-9" role="main">
+<h1 id="003-granularity-of-read-access-of-data-clients">003 Granularity of read access of data clients</h1>
+<ul>
+<li>Status: accepted</li>
+<li>Deciders: partners</li>
+</ul>
+<h2 id="context-and-problem-statement">Context and Problem Statement</h2>
+<p>Due to a very heterogenous system landscape with multiple different data sources we need to define a read access API which can be realized for all data sources.</p>
+<h2 id="decision-drivers">Decision Drivers</h2>
+<ul>
+<li>supportability: data clients can be easily implemented by a sensor/tool manufacturer</li>
+<li>usability: allow easy access to multiple values</li>
+<li>consistency: enable synchronized/consistent access to related values</li>
+</ul>
+<h2 id="considered-options">Considered Options</h2>
+<ul>
+<li>Only single values/fields can be read</li>
+<li>Complete state is read at once</li>
+<li>Select values/fields to read</li>
+</ul>
+<h2 id="decision-outcome">Decision Outcome</h2>
+<p>Select values/fields to read</p>
+<p>This option was choosen even though it might require more effort when implementing data clients to have a simple and at the same time more versatile API.</p>
+<h3 id="positive-consequences">Positive Consequences</h3>
+<ul>
+<li>the other two options can be easily covered by corresponding selections over single fields or the complete state</li>
+<li>data clients are responsible to return a consistent state of all the variables requested while the TEK is responsible to request all variables which need to be consistent with only one call</li>
+</ul>
+<h3 id="negative-consequences">Negative Consequences</h3>
+<ul>
+<li>a slightly increased complexity in the implementation of the DC (compared to the first option), especially concerning error handling</li>
+</ul>
+<h2 id="pros-and-cons-of-the-options">Pros and Cons of the Options</h2>
+<h3 id="only-single-valuesfields-can-be-read">Only single values/fields can be read</h3>
+<p>The data client provides a callback for single fields.</p>
+<div class="codehilite"><pre><span></span><code><span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">data_client_read_callback</span><span class="p">)(</span><span class="w"></span>
+<span class="w">            </span><span class="n">data_client</span><span class="w"> </span><span class="n">dc</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="n">field_handle</span><span class="w"> </span><span class="n">field</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="k">struct</span> <span class="nc">read_result</span><span class="o">*</span><span class="w"> </span><span class="n">result</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<ul>
+<li>Good, because read access is simple</li>
+<li>Good, because data client must not handle consistent read access</li>
+<li>Good, because read error handling is field specific</li>
+<li>Bad, because overhead in TE when accessing multiple fields</li>
+<li>Bad, because additional APIs are required to enable consistent access to multiple values (i.e. some kind of transaction mechanism)</li>
+</ul>
+<h3 id="complete-state-is-read-at-once">Complete state is read at once</h3>
+<p>The data client provides a callback for the complete current state of the data source.</p>
+<div class="codehilite"><pre><span></span><code><span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">data_client_read_callback</span><span class="p">)(</span><span class="w"></span>
+<span class="w">            </span><span class="n">data_client</span><span class="w"> </span><span class="n">dc</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="k">struct</span> <span class="nc">read_result</span><span class="o">**</span><span class="w"> </span><span class="n">results</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">read_results_count</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<ul>
+<li>Good, because no separate synchronization is required in the API</li>
+<li>Bad, because can return more data than needed by the TEK</li>
+<li>Bad, because data client must handle read access synchronization</li>
+<li>Bad, because error handling for read errors is more complex</li>
+</ul>
+<h3 id="select-valuesfields-to-read">Select values/fields to read</h3>
+<p>The data client provides a callback which supports selection of values/fields to read.</p>
+<div class="codehilite"><pre><span></span><code><span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">data_client_read_callback</span><span class="p">)(</span><span class="w"></span>
+<span class="w">            </span><span class="n">data_client</span><span class="w"> </span><span class="n">dc</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="n">field_handle</span><span class="o">*</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="kt">size_t</span><span class="w"> </span><span class="n">fields_size</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="k">struct</span> <span class="nc">read_result</span><span class="o">*</span><span class="w"> </span><span class="n">results</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<ul>
+<li>Good, because no separate synchronization is required in the API</li>
+<li>Good, because returns exactly the data needed by the TEK</li>
+<li>Good, because single field read access can be covered by the same callback</li>
+<li>Good, because the memory management is done completely in the TEK</li>
+<li>Bad, because data client must handle read access synchronization</li>
+<li>Bad, because error handling for read errors is more complex</li>
+</ul></div>
+</div>
+</div>
+<footer class="col-md-12">
+<hr/>
+<p>Copyright © 2021</p>
+<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+</footer>
+<script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+<script defer="" src="../js/base.js"></script>
+<script defer="" src="../search/main.js"></script>
+<div aria-hidden="true" aria-labelledby="searchModalLabel" class="modal" id="mkdocs_search_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="searchModalLabel">Search</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<p>From here you can search these documents. Enter your search terms below.</p>
+<form>
+<div class="form-group">
+<input class="form-control" id="mkdocs-search-query" placeholder="Search..." title="Type search term here" type="search"/>
+</div>
+</form>
+<div data-no-results-text="No results found" id="mkdocs-search-results"></div>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

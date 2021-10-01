@@ -1,0 +1,37 @@
+@startuml PluginInitializationSequence
+!include ../materia-theme.puml
+participant TEK
+participant Plugin
+== Loading Plugin ==
+TEK -> Plugin : load_plugin(tek)
+return client_plugin*
+
+== Create new data client ==
+TEK->Plugin : client_plugin->create_new_client(client_configuration)
+activate Plugin
+create DC
+Plugin->DC : new
+activate DC
+DC->DC : initialize
+return 
+return (RESULT, data_client*)
+
+== Registering the client data at TEK ==
+TEK -> DC : data_client->register(data_client->handle)
+activate DC
+DC -> TEK:register_fields
+activate TEK
+return
+DC -> TEK:register_fields
+activate TEK
+return
+
+return RESULT
+
+== Connect the client to hardware ==
+TEK->DC: connect(data_client->handle)
+activate DC
+return RESULT
+...
+
+@enduml

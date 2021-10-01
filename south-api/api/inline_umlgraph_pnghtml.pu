@@ -1,0 +1,88 @@
+@startuml PluginInitializationSequence.png
+ !include /sources/specification/docs/materia-theme.puml
+ participant TEK
+ participant SharedLibrary
+ == Loading Plugin ==
+ TEK -> SharedLibrary : load_plugin(tek)
+ activate SharedLibrary
+ create Plugin
+ SharedLibrary -> Plugin:new
+ Plugin -> Plugin : store tek
+ return data_client_plugin*
+
+ == Create new data client ==
+ TEK->Plugin : data_client_new(data_client_plugin->plugin_context,client_configuration)
+ activate Plugin
+ create DC
+ Plugin->DC : new
+ activate DC
+ DC->DC : initialize
+ return
+ return (RESULT, data_client*, data_client_capabilities*)
+
+ == Registering the client data at TEK ==
+ TEK -> DC : register(data_client->handle)
+ activate DC
+ DC -> TEK:register_field(handle, name, attributes, type)
+ activate TEK
+ return
+ note across
+  multiple calls to ""register_fields"", ""register_methods"",""register_event"", ""register_alarm"", ""register_enum_type"",""register_struct_type"" calls to ""log"", ""get_global_event"" are possible too
+ end note
+ DC -> TEK:register_field(handle, name, attributes, type)
+ activate TEK
+ return
+
+ return RESULT
+
+ == Connect the client to hardware ==
+ TEK->DC: connect(data_client->handle)
+ activate DC
+ note across
+  multiple calls to ""register_*"" may happen here too calls to ""log"", ""get_global_event"" and ""update_capabilities"" are possible too
+ end note
+ return RESULT
+ ...
+@enduml
+@startuml inline_umlgraph_1.png
+!include /sources/specification/docs/materia-theme.puml
+participant TEK
+participant DC
+
+alt #LightGoldenRodYellow synchronous call
+    TEK --> DC : read_fields(dcHandle, requestId, fields, numberOfFields,**false**)
+    activate DC
+    DC->TEK: read_result(dcHandle, requestId, TEK_SA_READ_RESULT_STATUS_OK, values, numberOfValues)
+    note right
+        the number and order of values must match the parameters ""fields"" and ""numberOfFields""
+    end note
+    return TEK_SA_ERR_SUCCESS
+...
+
+else #GoldenRod asynchronous call
+    alt client supports multithreading
+    TEK --> DC : read_fields(dcHandle, requestId, fields, numberOfFields,**true**)
+    note right: DC buffers the requested field information par
+    activate DC
+    return TEK_SA_ERR_SUCCESS
+
+    DC->TEK: read_result(dcHandle, requestId,TEK_SA_READ_RESULT_STATUS_OK, values, numberOfValues)
+    note right: DC returns read values in another thread end
+    ...
+    else client does not support multithreading
+    TEK --> DC : read_fields(dcHandle, requestId, fields, numberOfFields, **true**)
+    note right
+        DC can not work in nonblocking mode and returns the according error code
+    end note
+    activate DC
+    return **TEK_SA_ERR_NON_BLOCKING_IMPOSSIBLE**
+    TEK --> DC : read_fields(dcHandle,requestId, fields, numberOfFields, **false**)
+    note right: the TEK will repeat the call with ""do_not_block"" set to __false__
+    activate DC
+    DC->TEK: read_result(dcHandle, requestId, TEK_SA_READ_RESULT_STATUS_OK, values, numberOfValues)
+    return TEK_SA_ERR_SUCCESS
+    end
+    ...
+end
+...
+@enduml

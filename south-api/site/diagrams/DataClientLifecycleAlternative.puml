@@ -1,0 +1,12 @@
+@startuml DataClientLifecycleAlternative
+!include ../materia-theme.puml
+hide empty description
+[*] --> Not_Existing
+state create_success <<choice>>
+Not_Existing --> create_success : client_new()
+create_success --> Created : [Result = Ok]
+create_success --> Failed : [Result != Ok]
+Created --> Disconnected : client_register()
+Disconnected --> Connected : client_connect()
+Connected --> Disconnected : client_disonnect()
+@enduml

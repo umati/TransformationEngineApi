@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="API documentation" name="description"/>
+<meta content="VDW-Forschungsinstitut e.V." name="author"/>
+<link href="https://transformationengine.umati.org/index.html" rel="canonical"/>
+<link href="img/favicon.ico" rel="shortcut icon"/>
+<title>umati Transformation Engine</title>
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/font-awesome.min.css" rel="stylesheet"/>
+<link href="css/base.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<script defer="" src="js/jquery-1.10.2.min.js"></script>
+<script defer="" src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="pdf/TEK-SouthAPI.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
+<body class="homepage">
+<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="index.html">umati Transformation Engine</a>
+<!-- Expander button -->
+<button class="navbar-toggler" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse" id="navbar-collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li class="navitem active">
+<a class="nav-link" href="index.html">Overview</a>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Decisions <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="decisions/001-dataclient-interface-type.html">001 Type of the interface (Socket, shared library or managed code)</a>
+</li>
+<li>
+<a class="dropdown-item" href="decisions/002-api-artifacts.html">002 API artifacts</a>
+</li>
+<li>
+<a class="dropdown-item" href="decisions/003-read-access.html">003 Granularity of read access of data clients</a>
+</li>
+<li>
+<a class="dropdown-item" href="decisions/004-threading-model.html">004 Data client threading model</a>
+</li>
+<li>
+<a class="dropdown-item" href="decisions/005-error-codes.html">005 Error codes definition</a>
+</li>
+<li>
+<a class="dropdown-item" href="decisions/006-text-encoding.html">006 How should text values be encoded?</a>
+</li>
+<li>
+<a class="dropdown-item" href="decisions/007-memory-allocation.html">007 What are the rules for memory management?</a>
+</li>
+<li>
+<a class="dropdown-item" href="decisions/008-configuration-structure.html">008 What are the common requirements for the data client configuration?</a>
+</li>
+<li>
+<a class="dropdown-item" href="decisions/009-data-client-model-access.html">009 data client model access</a>
+</li>
+<li>
+<a class="dropdown-item" href="decisions/010-opc-ua-data-source-integration.html">010 OPC UA data source integration</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" data-target="#mkdocs_search_modal" data-toggle="modal" href="#">
+<i class="fa fa-search"></i> Search
+                            </a>
+</li>
+<li class="nav-item">
+<a class="nav-link disabled" rel="prev">
+<i class="fa fa-arrow-left"></i> Previous
+                                </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="decisions/001-dataclient-interface-type.html" rel="next">
+                                    Next <i class="fa fa-arrow-right"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+<div class="navbar-header">
+<button class="navbar-toggler collapsed" data-target="#toc-collapse" data-toggle="collapse" title="Table of Contents" type="button">
+<span class="fa fa-angle-down"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse card bg-secondary" id="toc-collapse">
+<ul class="nav flex-column">
+<li class="nav-item" data-level="1"><a class="nav-link" href="#umati-transformation-engine">umati Transformation Engine</a>
+<ul class="nav flex-column">
+<li class="nav-item" data-level="2"><a class="nav-link" href="#foreword">Foreword</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#glossary">Glossary</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#purpose-and-scope">Purpose and Scope</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#system-context">System context</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#container-diagram">Container diagram</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#architectural-drivers">Architectural Drivers</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#decisions-summary">Decisions summary</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div></div>
+<div class="col-md-9" role="main">
+<h1 id="umati-transformation-engine">umati Transformation Engine</h1>
+<h2 id="foreword">Foreword</h2>
+<p>The <a href="https://vdw-forschungsinstitut.de/">VDW-Forschungsinstitut e.V.</a> is currently working with partners and its members to create a specification of a TransformationEngine.</p>
+<p>This document describes the development process and the decisions made to develop the first API. Currently this is designed to be implemented in C to allow the application on any necessary platform and device.</p>
+<p><strong>Application Warning Notice</strong></p>
+<p>This DRAFT with date of issue 2021-10-01 is being submitted to the public for review and comment.
+Because the final API Specification may differ from this version, the application of this draft is subject to special agreement.</p>
+<p>Comments are requested:</p>
+<ul>
+<li>preferably as a file by e-mail to g.goerisch@vdw.de</li>
+<li>or in paper form to VDW-Forschungsinstitut e.V., Lyoner Straße 18, 60528 Frankfurt</li>
+</ul>
+<p><strong>Partners</strong></p>
+<ul>
+<li><a href="https://bridgefield.de/">Bridgefield</a> (Magdeburg)</li>
+<li><a href="https://ite-si.de/">iT Engineering Software Innovations</a> (Pliezhausen)</li>
+<li><a href="https://pragmaticminds.de/">Pragmatic Minds</a> (Kirchheim/Teck)</li>
+</ul>
+<p><strong>Machine Tool Builders</strong></p>
+<ul>
+<li>CHIRON Group (Tuttlingen)</li>
+<li>DMG Mori (Pfronten)</li>
+<li>EMAG (Salach)</li>
+<li>GROB Werke (Mindelheim)</li>
+<li>Gebr. Heller (Nürtingen)</li>
+<li>Liebherr Verzahntechnik (Kempten)</li>
+<li>Trumpf Werkzeugmaschinen (Ditzingen)</li>
+<li>United Grinding Group (Bern)</li>
+</ul>
+<h2 id="glossary">Glossary</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td>Application Programming Interface</td>
+</tr>
+<tr>
+<td>DC</td>
+<td>Data Client</td>
+</tr>
+<tr>
+<td>Data Source</td>
+<td>Actual OEM data source or controller of manufacturing machine which is accessible by a south API compatible data client implementation</td>
+</tr>
+<tr>
+<td>North API</td>
+<td>'north bound' API to be used to provided data and functionality from transformation engine to a connected OPC UA server</td>
+</tr>
+<tr>
+<td>OPC UA</td>
+<td>OPC Unified Architecture: machine to machine communication protocol for industrial automation</td>
+</tr>
+<tr>
+<td>South API</td>
+<td>'south bound' API to be used to integrate data sources in transformation engines</td>
+</tr>
+<tr>
+<td>TE</td>
+<td>Transformation Engine</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="purpose-and-scope">Purpose and Scope</h2>
+<p>The OPC UA Server with the OPC 40501-1 UA for Machine Tools companion specification on the north side of the stack is the access for OPC-UA clients on machine or factory level which can communicate to local MES/PPS/ERP or cloud services. The Data Clients on the south side of the stack are the different sources and sinks for data and machining functions, i.e. these blocks may be for example NCs, PLC, IPCs and “intelligent” sensors or actuators in the machine. In most cases, all these sinks and sources provide non-standardized, proprietary interfaces. Hence, the objective of the proposed TransformationEngine is to transfer and convert data and commands between the OPC UA Server on the north side of the stack and the data clients on the south side. As an important requirement, the conversion must be provided in a standardized way.</p>
+<p>This document describes the requirements on this standardization. Further details on the functionality of the different components in the stack and on single requirements are given below.</p>
+<p><img alt="concept" src="images/TEK-Concept.png"/></p>
+<p><em>Figure 1 - Conceptual design of the TE</em></p>
+<hr/>
+<h2 id="system-context">System context</h2>
+<p>This is a simplified description of the system context the South API specification, defined here and in accompanying header files, is intended to be used in.</p>
+<p><img alt="system context" src="images/generated/Context.svg"/></p>
+<hr/>
+<h2 id="container-diagram">Container diagram</h2>
+<p>This diagram describes possible Transformation Engine implementation containers assumed/anticipated by this specification.</p>
+<p>The term <code>container</code> in this context is used for separately running applications native to the target  platform (<a href="https://en.wikipedia.org/wiki/C4_model">see also: C4 Model</a>).</p>
+<p><img alt="system context" src="images/generated/Container.svg"/></p>
+<p>For reference: The South API is intended to be used for either directly connecting the <code>transformation engine</code> with an <code>OEM data client</code> or indirectly through a separate <code>data client wrapper</code>.</p>
+<p>The <code>OPC UA server</code> and <code>OEM data client</code> are marked as <code>external</code> in this diagram to symbolize different implementation responsiblities.</p>
+<p>It is expected to have deployment scenarios where <code>transformation engine</code> and <code>data client wrapper</code> are implemented by the same implementor and combined with 3rd party <code>OEM data client</code> and <code>OPC UA server</code> implementations, which is why a South API definition and later a North API definition are needed in the first place.</p>
+<hr/>
+<h2 id="architectural-drivers">Architectural Drivers</h2>
+<p>The API design is mainly guided by the following selection of architectural drivers for now.</p>
+<table>
+<thead>
+<tr>
+<th>criteria</th>
+<th>meaning in project context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>extensibility</td>
+<td>multiple different data clients must be supported by a single transformation engine</td>
+</tr>
+<tr>
+<td>availability</td>
+<td>implementing data clients must be easy and not require special runtimes or tools</td>
+</tr>
+<tr>
+<td>portability I</td>
+<td>implementing data clients must not require OPC UA</td>
+</tr>
+<tr>
+<td>portability II</td>
+<td>chosen data client technology must at least enable Windows and Linux host systems</td>
+</tr>
+<tr>
+<td>reusability</td>
+<td>implemented data clients must be usable by different transformation engine implementations</td>
+</tr>
+</tbody>
+</table>
+<h2 id="decisions-summary">Decisions summary</h2>
+<p>The current South API is mainly based on decisions described in the table below.</p>
+<p>Apart from these decisions certain parts of the OPC UA specification were also used. These are mentioned and linked explicitly from the actual South API specification. </p>
+<p>The impact of these references was carefully limited to not add additional dependencies for data client implementors (see <code>portability I</code> criteria) and mainly used to simplify later interactions between data clients and a North API that will be more reliant on OPC UA specifications.</p>
+<table>
+<thead>
+<tr>
+<th>number</th>
+<th>problem to solve</th>
+<th>decision</th>
+<th>state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>001</td>
+<td><a href="decisions/001-dataclient-interface-type.html">interface type</a></td>
+<td>stdcall C interface</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>002</td>
+<td><a href="decisions/002-api-artifacts.html">api artifacts</a></td>
+<td>only c header file(s)</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>003</td>
+<td><a href="decisions/003-read-access.html">read access</a></td>
+<td>select fields to read</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>004</td>
+<td><a href="decisions/004-threading-model.html">threading model</a></td>
+<td>Async data client API</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>005</td>
+<td><a href="decisions/005-error-codes.html">error codes</a></td>
+<td>Same error type for all methods</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>006</td>
+<td><a href="decisions/006-text-encoding.html">text encoding</a></td>
+<td>UTF-8</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>007</td>
+<td><a href="decisions/007-memory-allocation.html">memory allocation</a></td>
+<td>no ownership transfer</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>008</td>
+<td><a href="decisions/008-configuration-structure.html">configuration structure</a></td>
+<td>separate files for each client</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>009</td>
+<td><a href="decisions/009-data-client-model-access.html">data client model access</a></td>
+<td>data client registers model at TEK</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>010</td>
+<td><a href="decisions/010-opc-ua-data-source-integration.html">OPC UA data source integration</a></td>
+<td>assume a South API independent direct connection from OPC UA data sources to north bound OPC UA to be defined in later iteration</td>
+<td>accepted</td>
+</tr>
+</tbody>
+</table>
+<p>Newly defined architectural drivers and or requirements from other sources might require decisions to be reevaluated.</p></div>
+</div>
+</div>
+<footer class="col-md-12">
+<hr/>
+<p>Copyright © 2021</p>
+<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+</footer>
+<script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+<script defer="" src="js/base.js"></script>
+<script defer="" src="search/main.js"></script>
+<div aria-hidden="true" aria-labelledby="searchModalLabel" class="modal" id="mkdocs_search_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="searchModalLabel">Search</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<p>From here you can search these documents. Enter your search terms below.</p>
+<form>
+<div class="form-group">
+<input class="form-control" id="mkdocs-search-query" placeholder="Search..." title="Type search term here" type="search"/>
+</div>
+</form>
+<div data-no-results-text="No results found" id="mkdocs-search-results"></div>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<!--
+MkDocs version : 1.2.2
+Build Date UTC : 2021-10-01 19:47:37.409890+00:00
+-->

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="583.3333px" preserveAspectRatio="none" style="width:1097px;height:583px;background:#00000000;" version="1.1" viewBox="0 0 1097 583" width="1097.9167px" zoomAndPan="magnify"><defs><linearGradient id="g1bbowllyj6cy00" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#4DABF5"/><stop offset="100%" stop-color="#2196F3"/></linearGradient><filter height="300%" id="f1bbowllyj6cy0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><linearGradient id="g1bbowllyj6cy01" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#B052C0"/><stop offset="100%" stop-color="#9C27B0"/></linearGradient></defs><g><!--MD5=[cb028c5091c687ec367cd0cbfd70389f]
+entity engine--><rect fill="url(#g1bbowllyj6cy00)" filter="url(#f1bbowllyj6cy0)" height="66.6341" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.5625;" width="208.3333" x="479.6875" y="171.875"/><rect fill="url(#g1bbowllyj6cy00)" height="10.4167" style="stroke:#2196F3;stroke-width:1.5625;" width="15.625" x="667.1875" y="177.0833"/><rect fill="url(#g1bbowllyj6cy00)" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="665.1042" y="179.1667"/><rect fill="url(#g1bbowllyj6cy00)" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="665.1042" y="183.3333"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="145.8333" x="505.7292" y="214.7278">transformation engine</text><path d="M6.25,179.1667 L6.25,231.1849 A4.1667,4.1667 0 0 0 10.4167,235.3516 L438.5417,235.3516 A4.1667,4.1667 0 0 0 442.7083,231.1849 L442.7083,185.4167 L432.2917,175 L10.4167,175 A4.1667,4.1667 0 0 0 6.25,179.1667 " fill="url(#g1bbowllyj6cy01)" filter="url(#f1bbowllyj6cy0)" style="stroke:#9C27B0;stroke-width:1.0416666666666667;"/><path d="M432.2917,175 L432.2917,183.3333 A2.0833,2.0833 0 0 0 434.375,185.4167 L442.7083,185.4167 L432.2917,175 " fill="url(#g1bbowllyj6cy01)" style="stroke:#9C27B0;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="393.75" x="22.9167" y="202.2278">variant a: data client is loaded directly by engine to minimize</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="220.8333" x="22.9167" y="216.7786">network communication overhead</text><!--MD5=[9f9a1faccea72ff1e32b8c0f04ecd80c]
+entity dc_wrapper--><rect fill="url(#g1bbowllyj6cy00)" filter="url(#f1bbowllyj6cy0)" height="66.6341" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.5625;" width="189.5833" x="724.4792" y="171.875"/><rect fill="url(#g1bbowllyj6cy00)" height="10.4167" style="stroke:#2196F3;stroke-width:1.5625;" width="15.625" x="893.2292" y="177.0833"/><rect fill="url(#g1bbowllyj6cy00)" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="891.1458" y="179.1667"/><rect fill="url(#g1bbowllyj6cy00)" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="891.1458" y="183.3333"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="127.0833" x="750.5208" y="214.7278">data client wrapper</text><path d="M651.5625,305.2083 L651.5625,400.8789 A4.1667,4.1667 0 0 0 655.7292,405.0456 L1080.7292,405.0456 A4.1667,4.1667 0 0 0 1084.8958,400.8789 L1084.8958,311.4583 L1074.4792,301.0417 L655.7292,301.0417 A4.1667,4.1667 0 0 0 651.5625,305.2083 " fill="url(#g1bbowllyj6cy01)" filter="url(#f1bbowllyj6cy0)" style="stroke:#9C27B0;stroke-width:1.0416666666666667;"/><path d="M1074.4792,301.0417 L1074.4792,309.375 A2.0833,2.0833 0 0 0 1076.5625,311.4583 L1084.8958,311.4583 L1074.4792,301.0417 " fill="url(#g1bbowllyj6cy01)" style="stroke:#9C27B0;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="390.625" x="668.2292" y="328.2694">variant b: loading and usage of data client is not in process</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="301.0417" x="668.2292" y="342.8202">of engine itself to mitigate problems with third</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="118.75" x="668.2292" y="357.371">party data clients.</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="383.3333" x="668.2292" y="371.9218">Communication with transformation engine is implemented</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="172.9167" x="668.2292" y="386.4726">with internal wire protocol.</text><!--MD5=[c05fcadc036a699206cfdfa4a4fdb889]
+entity controller--><rect fill="#FFC0CB" filter="url(#f1bbowllyj6cy0)" height="102.0182" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.5625;" width="130.2083" x="468.75" y="467.7083"/><rect fill="#FFC0CB" height="10.4167" style="stroke:#2196F3;stroke-width:1.5625;" width="15.625" x="578.125" y="472.9167"/><rect fill="#FFC0CB" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="576.0417" y="475"/><rect fill="#FFC0CB" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="576.0417" y="479.1667"/><text fill="#000000" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="67.7083" x="494.7917" y="510.5611">«external»</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="62.5" x="497.3958" y="545.9452">controller</text><!--MD5=[da06e80f650535affd0947522e497490]
+entity opc_ua_server--><rect fill="#FFC0CB" filter="url(#f1bbowllyj6cy0)" height="102.0182" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.5625;" width="156.25" x="505.7292" y="7.2917"/><rect fill="#FFC0CB" height="10.4167" style="stroke:#2196F3;stroke-width:1.5625;" width="15.625" x="641.1458" y="12.5"/><rect fill="#FFC0CB" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="639.0625" y="14.5833"/><rect fill="#FFC0CB" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="639.0625" y="18.75"/><text fill="#000000" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="67.7083" x="544.7917" y="50.1444">«external»</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="93.75" x="531.7708" y="85.5286">OPC UA Server</text><!--MD5=[226fc8af728df80cb2ddb40b34b22fc1]
+entity dc--><rect fill="#FFC0CB" filter="url(#f1bbowllyj6cy0)" height="102.0182" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.5625;" width="161.4583" x="453.125" y="302.0833"/><rect fill="#FFC0CB" height="10.4167" style="stroke:#2196F3;stroke-width:1.5625;" width="15.625" x="593.75" y="307.2917"/><rect fill="#FFC0CB" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="591.6667" y="309.375"/><rect fill="#FFC0CB" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="591.6667" y="313.5417"/><text fill="#000000" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="67.7083" x="494.7917" y="344.9361">«external»</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="98.9583" x="479.1667" y="380.3202">OEM Dataclient</text><!--MD5=[ee6085b3295c7fccd8048557017a74f1]
+reverse link opc_ua_server to engine--><path d="M583.8542,114.9115 C583.8542,114.9115 583.8542,171.5814 583.8542,171.5814 " fill="none" id="opc_ua_server-backto-engine" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="583.8542,109.7031,579.6875,119.0781,583.8542,114.9115,588.0208,119.0781,583.8542,109.7031" style="stroke:#2196F3;stroke-width:3.125;"/><!--MD5=[daa6a8e67841997373794481c1590c8b]
+link engine to dc--><path d="M524.6528,238.7729 C524.6528,238.7729 524.6528,296.771 524.6528,296.771 " fill="none" id="engine-to-dc" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="524.6528,301.9794,528.8195,292.6044,524.6528,296.771,520.4861,292.6044,524.6528,301.9794" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="42.7083" x="470.4861" y="290.8331">«load»</text><!--MD5=[0540b5f1d5f8d7a8866444ec2529ca05]
+link engine_load_dc to engine--><path d="M442.8511,195.8333 C455.3443,195.8333 467.5755,195.8333 479.2875,195.8333 " fill="none" id="engine_load_dc-engine" style="stroke:#2196F3;stroke-width:3.125;stroke-dasharray:7.0,7.0;"/><!--MD5=[a7bd7d7fe67e14572966fda895efe9ca]
+link engine_load_dc to dc--><path d="M442.7688,215.625 C457.3611,215.625 466.4063,215.625 466.4063,215.625 C466.4063,215.625 466.4063,262.8319 466.4063,301.9251 " fill="none" id="engine_load_dc-dc" style="stroke:#2196F3;stroke-width:3.125;stroke-dasharray:7.0,7.0;"/><!--MD5=[52b4eef4e8a766c6f10eb0f7a75ff279]
+link engine to dc_wrapper--><path d="M688.1394,205.2083 C688.1394,205.2083 719.1457,205.2083 719.1457,205.2083 " fill="none" id="engine-to-dc_wrapper" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="724.3541,205.2083,714.9791,201.0417,719.1457,205.2083,714.9791,209.375,724.3541,205.2083" style="stroke:#2196F3;stroke-width:3.125;"/><!--MD5=[233c2cbbefbf6999a24d9534cb18e4cb]
+link dc_wrapper to dc--><path d="M787.6736,238.635 C787.6736,254.3938 787.6736,269.7917 787.6736,269.7917 C787.6736,269.7917 569.618,269.7917 569.618,269.7917 C569.618,269.7917 569.618,296.5639 569.618,296.5639 " fill="none" id="dc_wrapper-to-dc" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="569.618,301.7722,573.7847,292.3972,569.618,296.5639,565.4514,292.3972,569.618,301.7722" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="42.7083" x="626.6714" y="292.8528">«load»</text><!--MD5=[9d53bdaf111164d017a01bb7965882a2]
+link dc_wrapper to wrapper_loads_dc--><path d="M850.868,238.7729 C850.868,257.099 850.868,280.1982 850.868,300.8304 " fill="none" id="dc_wrapper-wrapper_loads_dc" style="stroke:#2196F3;stroke-width:3.125;stroke-dasharray:7.0,7.0;"/><!--MD5=[f18d6367ba467019d3b8e44ac89dd561]
+link dc to wrapper_loads_dc--><path d="M614.797,353.125 C626.3939,353.125 638.7529,353.125 651.5366,353.125 " fill="none" id="dc-wrapper_loads_dc" style="stroke:#2196F3;stroke-width:3.125;stroke-dasharray:7.0,7.0;"/><!--MD5=[2c52dfb1fafd6e8c1e509f77c8673fa0]
+link dc to controller--><path d="M533.8542,404.1694 C533.8542,404.1694 533.8542,462.3807 533.8542,462.3807 " fill="none" id="dc-to-controller" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="533.8542,467.5891,538.0208,458.2141,533.8542,462.3807,529.6875,458.2141,533.8542,467.5891" style="stroke:#2196F3;stroke-width:3.125;"/><!--MD5=[65119cbe8aae49317b53622a8a9a94aa]
+@startuml Container
+
+!include ../materia-theme.puml
+skinparam linetype ortho
+
+skinparam component {
+  BackgroundColor<<external>> Pink
+}
+
+component engine as "transformation engine"
+note "variant a: data client is loaded directly by engine to minimize\nnetwork communication overhead" as engine_load_dc
+component dc_wrapper as "data client wrapper"
+note "variant b: loading and usage of data client is not in process\nof engine itself to mitigate problems with third\nparty data clients.\nCommunication with transformation engine is implemented\nwith internal wire protocol." as wrapper_loads_dc
+component controller <<external>>
+component opc_ua_server as "OPC UA Server" <<external>>
+component dc as "OEM Dataclient" <<external>>
+
+engine -up-> opc_ua_server
+engine -down-> dc : <<load>>
+engine .left. engine_load_dc
+engine_load_dc .down. dc
+engine -right-> dc_wrapper
+dc_wrapper -down-> dc : <<load>>
+dc_wrapper .right. wrapper_loads_dc
+wrapper_loads_dc .left. dc
+dc -down-> controller
+
+@enduml
+
+@startuml Container
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             true
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               10
+skinparam ArrowColor            #666
+skinparam stereotype {
+    CBackgroundColor #fff
+    CBorderColor #cccccc
+    ABackgroundColor #70bf73
+    ABorderColor #3D8C40
+    IBackgroundColor #B7161C
+    IBorderColor #b7161c
+    EBackgroundColor #ffad33
+    EBorderColor #CC7A00
+    NBackgroundColor #b052c0
+    NBorderColor #7D1F8D
+}
+skinparam title {
+	FontColor	                 #2196F3
+	BorderColor	                 #cccccc
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #fff-#fff
+}
+
+skinparam legend {
+	BackgroundColor #fff
+	BorderColor #cccccc
+	FontColor #222
+}
+
+skinparam swimlane {
+	BorderColor #9C27B0
+	BorderThickness 2
+	TitleBackgroundColor  #fff-#fff
+	TitleFontColor #2196F3
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BarColor #4CAF50
+	StartColor #9C27B0
+	EndColor #9C27B0
+	DiamondBackgroundColor #FFF-#fff
+  	DiamondBorderColor #cccccc
+	DiamondFontColor #222
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2196F3
+	FontColor #222
+}
+
+
+skinparam sequence {
+	BorderColor #2196F3
+	TitleFontColor #2196F3
+	BackgroundColor transparent
+	StartColor #2196F3
+	EndColor #2196F3
+	BoxBackgroundColor #fff
+	BoxBorderColor #666
+	BoxFontColor #222
+	LifeLineBorderColor #cccccc
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #fff
+	GroupBorderColor #666
+	GroupFontColor #222
+	GroupHeaderFontColor #9C27B0
+	DividerBackgroundColor #FFF-#fff
+    DividerBorderColor #666
+    DividerBorderThickness 2
+    DividerFontColor #222
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #666
+	ReferenceFontColor #222
+	ReferenceHeaderFontColor #9C27B0
+}
+
+
+skinparam partition {
+	BorderColor #2196F3
+	FontColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#fff
+	BorderColor #666
+	FontColor #666
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam interface {
+	BackgroundColor  #B7161C
+	BorderColor  #e51c23
+	FontColor #222
+}
+
+
+skinparam storage {
+	BackgroundColor #ffad33-#ff9800
+  	BorderColor #ff9800
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #fff-#fff
+	BorderColor #222
+	FontColor #222
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #222
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	HeaderBackgroundColor #2196F3-#1a78c2
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #fff
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam rectangle {
+	FontColor #2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam package {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#fff
+  	BorderColor #ff9800
+	FontColor #ff9800
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#fff
+  	BorderColor #9C27B0
+	FontColor #9C27B0
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderColor #1a78c2
+	StartColor #9C27B0
+	EndColor #9C27B0
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam card {
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #fff-#fff
+	BorderColor #666
+	FontColor #666
+
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+skinparam linetype ortho
+
+skinparam component {
+  BackgroundColor<<external>> Pink
+}
+
+component engine as "transformation engine"
+note "variant a: data client is loaded directly by engine to minimize\nnetwork communication overhead" as engine_load_dc
+component dc_wrapper as "data client wrapper"
+note "variant b: loading and usage of data client is not in process\nof engine itself to mitigate problems with third\nparty data clients.\nCommunication with transformation engine is implemented\nwith internal wire protocol." as wrapper_loads_dc
+component controller <<external>>
+component opc_ua_server as "OPC UA Server" <<external>>
+component dc as "OEM Dataclient" <<external>>
+
+engine -up-> opc_ua_server
+engine -down-> dc : <<load>>
+engine .left. engine_load_dc
+engine_load_dc .down. dc
+engine -right-> dc_wrapper
+dc_wrapper -down-> dc : <<load>>
+dc_wrapper .right. wrapper_loads_dc
+wrapper_loads_dc .left. dc
+dc -down-> controller
+
+@enduml
+
+PlantUML version 1.2021.11beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="419.7917px" preserveAspectRatio="none" style="width:1023px;height:419px;background:#00000000;" version="1.1" viewBox="0 0 1023 419" width="1023.9583px" zoomAndPan="magnify"><defs><filter height="300%" id="f15dh04ugylsyt" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><linearGradient id="g15dh04ugylsyt0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#4DABF5"/><stop offset="100%" stop-color="#2196F3"/></linearGradient></defs><g><ellipse cx="745.8333" cy="16.6667" fill="#9C27B0" filter="url(#f15dh04ugylsyt)" rx="10.4167" ry="10.4167" style="stroke:none;stroke-width:1.0416666666666667;"/><g id="Disconnected"><rect fill="url(#g15dh04ugylsyt0)" filter="url(#f15dh04ugylsyt)" height="90.389" rx="13.0208" ry="13.0208" style="stroke:#1A78C2;stroke-width:1.5625;" width="154.1667" x="367.7083" y="126.0417"/><line style="stroke:#1A78C2;stroke-width:1.5625;" x1="367.7083" x2="521.875" y1="171.8424" y2="171.8424"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="89.5833" x="400" y="153.2694">Disconnected</text><text fill="#222222" font-family="Verdana" font-size="11.4583" lengthAdjust="spacing" textLength="112.5" x="383.3333" y="198.1033">metadata available</text></g><g id="Connected"><rect fill="url(#g15dh04ugylsyt0)" filter="url(#f15dh04ugylsyt)" height="90.389" rx="13.0208" ry="13.0208" style="stroke:#1A78C2;stroke-width:1.5625;" width="281.25" x="7.2917" y="315.625"/><line style="stroke:#1A78C2;stroke-width:1.5625;" x1="7.2917" x2="288.5417" y1="361.4258" y2="361.4258"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="70.8333" x="112.5" y="342.8528">Connected</text><text fill="#222222" font-family="Verdana" font-size="11.4583" lengthAdjust="spacing" textLength="239.5833" x="22.9167" y="387.6867">communication successfully established</text></g><ellipse cx="872.9167" cy="360.9375" filter="url(#f15dh04ugylsyt)" rx="10.4167" ry="10.4167" style="stroke:#9C27B0;stroke-width:1.0416666666666667;fill:none;"/><ellipse cx="873.4375" cy="361.4583" fill="#9C27B0" rx="6.25" ry="6.25" style="stroke:none;stroke-width:1.0416666666666667;"/><!--MD5=[9701e4b1f1fe46fbb031f03bce34fbc4]
+link *start to Disconnected--><path d="M736.4936,21.4657 C705.1753,37.5584 601.6492,90.7544 526.8232,129.203 " fill="none" id="*start-to-Disconnected" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="521.9371,131.7136,532.18,131.1349,526.5696,129.3332,528.3713,123.7229,521.9371,131.7136" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="117.7083" x="668.75" y="81.3944">create(config,tek)</text><!--MD5=[cc9edbc832fac851df8fb897fc63facf]
+link Disconnected to Connected--><path d="M367.5964,208.5584 C344.7246,220.3861 319.9222,234.0244 297.9167,247.9167 C267.165,267.3304 234.7368,291.2808 207.93,312.13 " fill="none" id="Disconnected-to-Connected" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="203.6771,315.4483,213.6315,312.9663,207.7834,312.2444,208.5053,306.3962,203.6771,315.4483" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="53.125" x="309.375" y="270.9778">connect</text><!--MD5=[1c538c8853f42d83183763141671bbe8]
+link Connected to Disconnected--><path d="M288.7659,331.7341 C320.4093,320.579 352.2408,305.2838 378.125,284.375 C398.3897,268.0055 413.8524,243.7093 424.7597,221.8339 " fill="none" id="Connected-to-Disconnected" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="427.1564,216.9166,419.3034,223.5182,424.8744,221.5984,426.7942,227.1694,427.1564,216.9166" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="71.875" x="420.8333" y="270.9778">disconnect</text><!--MD5=[a21f49bfb96409834c63c548ff20880d]
+link Connected to Connected--><path d="M288.5622,356.9201 C310.2463,357.527 325,358.8661 325,360.9375 C325,362.8308 312.673,364.1124 293.9941,364.7822 " fill="none" id="Connected-to-Connected" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="288.5622,364.9549,298.0649,368.8213,293.7679,364.7893,297.7999,360.4922,288.5622,364.9549" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="80.2083" x="341.6667" y="365.7694">"read, write"</text><!--MD5=[a21f49bfb96409834c63c548ff20880d]
+link Connected to Connected--><path d="M288.792,352.3739 C364.7006,351.2852 438.5417,354.1397 438.5417,360.9375 C438.5417,367.5759 368.1214,370.4539 294.125,369.5711 " fill="none" id="Connected-to-Connected-1" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="288.792,369.5011,298.1113,373.7909,293.9999,369.5697,298.221,365.4583,288.792,369.5011" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="28.125" x="455.2083" y="365.7694">ping</text><!--MD5=[a21f49bfb96409834c63c548ff20880d]
+link Connected to Connected--><path d="M288.9836,348.7823 C390.0409,345.642 500,349.6936 500,360.9375 C500,371.9836 393.8727,376.0883 294.3205,373.2517 " fill="none" id="Connected-to-Connected-2" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="288.9836,373.0927,298.2303,377.5369,294.1897,373.2479,298.4787,369.2073,288.9836,373.0927" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="75" x="516.6667" y="365.7694">ping_failure</text><!--MD5=[a21f49bfb96409834c63c548ff20880d]
+link Connected to Connected--><path d="M288.773,346.2049 C428.9181,339.5929 608.3333,344.5038 608.3333,360.9375 C608.3333,377.1626 433.4447,382.1555 294.1292,375.9164 " fill="none" id="Connected-to-Connected-3" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="288.773,375.6701,297.9467,380.2631,293.9759,375.9094,298.3295,371.9385,288.773,375.6701" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="145.8333" x="625" y="365.7694">communication_failure</text><!--MD5=[f368adac5f1b4fc951e10892fcbff9d2]
+link Disconnected to *end--><path d="M521.9964,199.0233 C637.7825,240.5439 843.1446,314.291 844.7917,315.625 C854.7177,323.6638 862.1131,336.1971 866.8229,346.0465 " fill="none" id="Disconnected-to-*end" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="869.0401,350.9144,868.9456,340.6556,866.881,346.1746,861.362,344.1101,869.0401,350.9144" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="48.9583" x="768.75" y="270.9778">destroy</text><!--MD5=[635a6e97873457cf546488c82b22f7ce]
+link Disconnected to Disconnected--><path d="M522.0059,162.636 C542.6573,163.1152 558.3333,166.0213 558.3333,171.3542 C558.3333,176.2289 545.2358,179.0757 527.2131,179.895 " fill="none" id="Disconnected-to-Disconnected" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="522.0059,180.0723,531.5173,183.9175,527.2113,179.8951,531.2337,175.589,522.0059,180.0723" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="28.125" x="575" y="176.1861">ping</text><!--MD5=[635a6e97873457cf546488c82b22f7ce]
+link Disconnected to Disconnected--><path d="M522.1354,154.8747 C570.9635,151.2126 619.7917,156.7057 619.7917,171.3542 C619.7917,185.459 574.5203,191.0754 527.5689,188.2035 " fill="none" id="Disconnected-to-Disconnected-1" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="522.1354,187.8336,531.2058,192.6274,527.3317,188.1874,531.7717,184.3133,522.1354,187.8336" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="119.7917" x="636.4583" y="176.1861">connection_failure</text><!--MD5=[3d2416266f95920db2c6e65a49de3d74]
+link *start to *end--><path d="M755.7173,20.6721 C769.3294,26.7201 793.5951,39.5122 806.25,58.3333 C869.7069,152.71 873.8214,297.5755 873.3293,345.1813 " fill="none" id="*start-to-*end" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="873.2501,350.4948,877.5561,341.183,873.3278,345.287,869.2237,341.0587,873.2501,350.4948" style="stroke:#2196F3;stroke-width:3.125;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="131.25" x="873.9583" y="176.1861">invalid configuration</text><!--MD5=[533235ec5966baee5c56b61176ed7562]
+@startuml
+
+!include ../materia-theme.puml
+
+[*]- -> Disconnected : create(config,tek)
+Disconnected: metadata available
+Disconnected - ->  Connected : connect
+Connected: communication successfully established
+Connected - -> Connected : "read, write"
+Connected - -> Disconnected : disconnect
+Disconnected - -> [*] : destroy
+Disconnected - -> Disconnected : ping
+Disconnected - -> Disconnected : connection_failure
+Connected - -> Connected : ping
+Connected - -> Connected : ping_failure
+Connected - -> Connected : communication_failure
+[*] - -> [*] : invalid configuration
+@enduml
+
+@startuml
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             true
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               10
+skinparam ArrowColor            #666
+skinparam stereotype {
+    CBackgroundColor #fff
+    CBorderColor #cccccc
+    ABackgroundColor #70bf73
+    ABorderColor #3D8C40
+    IBackgroundColor #B7161C
+    IBorderColor #b7161c
+    EBackgroundColor #ffad33
+    EBorderColor #CC7A00
+    NBackgroundColor #b052c0
+    NBorderColor #7D1F8D
+}
+skinparam title {
+	FontColor	                 #2196F3
+	BorderColor	                 #cccccc
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #fff-#fff
+}
+
+skinparam legend {
+	BackgroundColor #fff
+	BorderColor #cccccc
+	FontColor #222
+}
+
+skinparam swimlane {
+	BorderColor #9C27B0
+	BorderThickness 2
+	TitleBackgroundColor  #fff-#fff
+	TitleFontColor #2196F3
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BarColor #4CAF50
+	StartColor #9C27B0
+	EndColor #9C27B0
+	DiamondBackgroundColor #FFF-#fff
+  	DiamondBorderColor #cccccc
+	DiamondFontColor #222
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2196F3
+	FontColor #222
+}
+
+
+skinparam sequence {
+	BorderColor #2196F3
+	TitleFontColor #2196F3
+	BackgroundColor transparent
+	StartColor #2196F3
+	EndColor #2196F3
+	BoxBackgroundColor #fff
+	BoxBorderColor #666
+	BoxFontColor #222
+	LifeLineBorderColor #cccccc
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #fff
+	GroupBorderColor #666
+	GroupFontColor #222
+	GroupHeaderFontColor #9C27B0
+	DividerBackgroundColor #FFF-#fff
+    DividerBorderColor #666
+    DividerBorderThickness 2
+    DividerFontColor #222
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #666
+	ReferenceFontColor #222
+	ReferenceHeaderFontColor #9C27B0
+}
+
+
+skinparam partition {
+	BorderColor #2196F3
+	FontColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#fff
+	BorderColor #666
+	FontColor #666
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam interface {
+	BackgroundColor  #B7161C
+	BorderColor  #e51c23
+	FontColor #222
+}
+
+
+skinparam storage {
+	BackgroundColor #ffad33-#ff9800
+  	BorderColor #ff9800
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #fff-#fff
+	BorderColor #222
+	FontColor #222
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #222
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	HeaderBackgroundColor #2196F3-#1a78c2
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #fff
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam rectangle {
+	FontColor #2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam package {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#fff
+  	BorderColor #ff9800
+	FontColor #ff9800
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#fff
+  	BorderColor #9C27B0
+	FontColor #9C27B0
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderColor #1a78c2
+	StartColor #9C27B0
+	EndColor #9C27B0
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam card {
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #fff-#fff
+	BorderColor #666
+	FontColor #666
+
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+[*]- -> Disconnected : create(config,tek)
+Disconnected: metadata available
+Disconnected - ->  Connected : connect
+Connected: communication successfully established
+Connected - -> Connected : "read, write"
+Connected - -> Disconnected : disconnect
+Disconnected - -> [*] : destroy
+Disconnected - -> Disconnected : ping
+Disconnected - -> Disconnected : connection_failure
+Connected - -> Connected : ping
+Connected - -> Connected : ping_failure
+Connected - -> Connected : communication_failure
+[*] - -> [*] : invalid configuration
+@enduml
+
+PlantUML version 1.2021.11beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

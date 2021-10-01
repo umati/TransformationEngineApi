@@ -1,0 +1,19 @@
+@startuml
+!include <C4/C4_Component>
+
+' Structurizr.ComponentView: InProcessComponentView
+title tek - engine-2 - Components
+
+LAYOUT_WITH_LEGEND()
+
+Component(tek__engine2__dataclient__27c59a, "dataclient", "", "Data Client")
+Component(tek__engine2__NorthApi__29e8405, "NorthApi", "", "North API")
+Component(tek__engine2__opcuaServer__165f26b, "opcuaServer", "", "Generic OPC UA Server")
+Component(tek__engine2__SouthApi__392a42d, "SouthApi", "", "[]")
+Component(tek__engine2__transformationkernel__19fd5c7, "transformation-kernel", "", "Transformation kernel")
+Rel_Up(tek__engine2__NorthApi__29e8405, tek__engine2__opcuaServer__165f26b, "[]", "[]")
+Rel(tek__engine2__SouthApi__392a42d, tek__engine2__dataclient__27c59a, "[]")
+Rel_Up(tek__engine2__transformationkernel__19fd5c7, tek__engine2__NorthApi__29e8405, "North API")
+Rel_Down(tek__engine2__transformationkernel__19fd5c7, tek__engine2__SouthApi__392a42d, "South API")
+@enduml
+

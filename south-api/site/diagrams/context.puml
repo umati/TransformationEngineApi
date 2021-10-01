@@ -1,0 +1,36 @@
+@startuml Context
+
+!include ../materia-theme.puml
+skinparam linetype ortho
+
+skinparam component {
+  BackgroundColor<<external>> Pink
+}
+together {
+  together {
+    actor plcdev as "PLC Developer"
+    actor fieldEngineer as "field engineer"
+    actor maintenanceEngineer as "maintenance engineer"
+
+    plcdev-[hidden]d-fieldEngineer
+    fieldEngineer-[hidden]d-maintenanceEngineer
+  }
+
+  together {
+    component system   <<system>> as "     System     "
+  }
+
+  together {
+    component plc <<external>>    as "              PLC             " 
+    component MES <<external>>    as "Manufacturing execution system"
+
+    plc-[hidden]d-MES
+  }
+}
+system <-up-> plc
+system <-left-> MES
+plcdev -right-> system
+fieldEngineer -right-> system
+maintenanceEngineer -right-> system
+
+@enduml

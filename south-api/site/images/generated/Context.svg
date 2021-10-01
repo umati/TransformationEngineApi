@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="452.0833px" preserveAspectRatio="none" style="width:670px;height:452px;background:#00000000;" version="1.1" viewBox="0 0 670 452" width="670.8333px" zoomAndPan="magnify"><defs><linearGradient id="gozsdkxpwlb620" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#4DABF5"/><stop offset="100%" stop-color="#2196F3"/></linearGradient><filter height="300%" id="fozsdkxpwlb62" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[b7741087ea7f789f8443aeb83bf2a8d7]
+entity plcdev--><ellipse cx="563.0208" cy="14.5833" fill="url(#gozsdkxpwlb620)" filter="url(#fozsdkxpwlb62)" rx="8.3333" ry="8.3333" style="stroke:#2196F3;stroke-width:1.5625;"/><path d="M563.0208,22.9167 L563.0208,51.0417 M549.4792,31.25 L576.5625,31.25 M563.0208,51.0417 L549.4792,66.6667 M563.0208,51.0417 L576.5625,66.6667 " fill="none" filter="url(#fozsdkxpwlb62)" style="stroke:#2196F3;stroke-width:1.5625;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="92.7083" x="516.6667" y="94.4153">PLC Developer</text><!--MD5=[c94ccaf4f1d48c48df9e8fb71d254115]
+entity fieldEngineer--><ellipse cx="563.0208" cy="180.2083" fill="url(#gozsdkxpwlb620)" filter="url(#fozsdkxpwlb62)" rx="8.3333" ry="8.3333" style="stroke:#2196F3;stroke-width:1.5625;"/><path d="M563.0208,188.5417 L563.0208,216.6667 M549.4792,196.875 L576.5625,196.875 M563.0208,216.6667 L549.4792,232.2917 M563.0208,216.6667 L576.5625,232.2917 " fill="none" filter="url(#fozsdkxpwlb62)" style="stroke:#2196F3;stroke-width:1.5625;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="89.5833" x="518.2292" y="260.0403">field engineer</text><!--MD5=[cfe2cd066e531aa526521aba0eb0418b]
+entity maintenanceEngineer--><ellipse cx="590.1042" cy="345.8333" fill="url(#gozsdkxpwlb620)" filter="url(#fozsdkxpwlb62)" rx="8.3333" ry="8.3333" style="stroke:#2196F3;stroke-width:1.5625;"/><path d="M590.1042,354.1667 L590.1042,382.2917 M576.5625,362.5 L603.6458,362.5 M590.1042,382.2917 L576.5625,397.9167 M590.1042,382.2917 L603.6458,397.9167 " fill="none" filter="url(#fozsdkxpwlb62)" style="stroke:#2196F3;stroke-width:1.5625;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="147.9167" x="516.1458" y="425.6653">maintenance engineer</text><!--MD5=[691a1726be306d84324876b17512fe90]
+entity system--><rect fill="url(#gozsdkxpwlb620)" filter="url(#fozsdkxpwlb62)" height="102.0182" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.5625;" width="151.0417" x="317.7083" y="336.4583"/><rect fill="url(#gozsdkxpwlb620)" height="10.4167" style="stroke:#2196F3;stroke-width:1.5625;" width="15.625" x="447.9167" y="341.6667"/><rect fill="url(#gozsdkxpwlb620)" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="445.8333" y="343.75"/><rect fill="url(#gozsdkxpwlb620)" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="445.8333" y="347.9167"/><text fill="#000000" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="60.4167" x="357.8125" y="379.3111">«system»</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="46.875" x="364.5833" y="414.6952">System</text><!--MD5=[135a44ff0fe349a7e77812b0dc5f8e5f]
+entity plc--><rect fill="#FFC0CB" filter="url(#fozsdkxpwlb62)" height="102.0182" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.5625;" width="197.9167" x="64.0625" y="170.8333"/><rect fill="#FFC0CB" height="10.4167" style="stroke:#2196F3;stroke-width:1.5625;" width="15.625" x="241.1458" y="176.0417"/><rect fill="#FFC0CB" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="239.0625" y="178.125"/><rect fill="#FFC0CB" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="239.0625" y="182.2917"/><text fill="#000000" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="67.7083" x="123.9583" y="213.6861">«external»</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="22.9167" x="148.4375" y="249.0702">PLC</text><!--MD5=[a8e9b3fba44ea078389aa21226ca60f5]
+entity MES--><rect fill="#FFC0CB" filter="url(#fozsdkxpwlb62)" height="102.0182" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.5625;" width="273.9583" x="7.2917" y="336.4583"/><rect fill="#FFC0CB" height="10.4167" style="stroke:#2196F3;stroke-width:1.5625;" width="15.625" x="260.4167" y="341.6667"/><rect fill="#FFC0CB" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="258.3333" y="343.75"/><rect fill="#FFC0CB" height="2.0833" style="stroke:#2196F3;stroke-width:1.5625;" width="4.1667" x="258.3333" y="347.9167"/><text fill="#000000" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="67.7083" x="105.2083" y="379.3111">«external»</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="211.4583" x="33.3333" y="414.6952">Manufacturing execution system</text><!--MD5=[7afe789b7e4d72ecce9fc2c1ff35aa6a]
+link plcdev to fieldEngineer--><!--MD5=[2612038d9e9e661eaca9f669a6681523]
+link fieldEngineer to maintenanceEngineer--><!--MD5=[dc00924fdc6435c12c2d186704f7daa6]
+link plc to MES--><!--MD5=[dc3f4bbffa2681b1692d785fe18ad558]
+link plc to system--><path d="M267.2719,205.7292 C267.2719,205.7292 355.4688,205.7292 355.4688,205.7292 C355.4688,205.7292 355.4688,331.1746 355.4688,331.1746 " fill="none" id="plc-system" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="355.4688,336.3829,359.6354,327.0079,355.4688,331.1746,351.3021,327.0079,355.4688,336.3829" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="262.0635,205.7292,271.4385,209.8958,267.2719,205.7292,271.4385,201.5625,262.0635,205.7292" style="stroke:#2196F3;stroke-width:3.125;"/><!--MD5=[a9bb693313e2fd1e7074a85dd93ccdba]
+link MES to system--><path d="M286.7024,388.0208 C286.7024,388.0208 312.4738,388.0208 312.4738,388.0208 " fill="none" id="MES-system" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="317.6821,388.0208,308.3071,383.8542,312.4738,388.0208,308.3071,392.1875,317.6821,388.0208" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="281.4941,388.0208,290.8691,392.1875,286.7024,388.0208,290.8691,383.8542,281.4941,388.0208" style="stroke:#2196F3;stroke-width:3.125;"/><!--MD5=[739ec31e4b7255c70d3cc9c9535a16e2]
+link plcdev to system--><path d="M506.0103,56.7708 C456.6841,56.7708 393.2292,56.7708 393.2292,56.7708 C393.2292,56.7708 393.2292,330.9781 393.2292,330.9781 " fill="none" id="plcdev-to-system" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="393.2292,336.1865,397.3958,326.8115,393.2292,330.9781,389.0625,326.8115,393.2292,336.1865" style="stroke:#2196F3;stroke-width:3.125;"/><!--MD5=[1283023b58a4767a624e620728eb93b9]
+link fieldEngineer to system--><path d="M507.7927,239.0625 C471.6127,239.0625 430.9896,239.0625 430.9896,239.0625 C430.9896,239.0625 430.9896,331.2079 430.9896,331.2079 " fill="none" id="fieldEngineer-to-system" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="430.9896,336.4163,435.1563,327.0413,430.9896,331.2079,426.8229,327.0413,430.9896,336.4163" style="stroke:#2196F3;stroke-width:3.125;"/><!--MD5=[cb6ea31da5b78a199529aa7f1f1e7544]
+link maintenanceEngineer to system--><path d="M505.4689,388.0208 C505.4689,388.0208 474.0002,388.0208 474.0002,388.0208 " fill="none" id="maintenanceEngineer-to-system" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="#2196F3" points="468.7919,388.0208,478.1669,392.1875,474.0002,388.0208,478.1669,383.8542,468.7919,388.0208" style="stroke:#2196F3;stroke-width:3.125;"/><!--MD5=[1a0548e087c856db0cc2b52a89fcca2b]
+@startuml Context
+
+!include ../materia-theme.puml
+skinparam linetype ortho
+
+skinparam component {
+  BackgroundColor<<external>> Pink
+}
+together {
+  together {
+    actor plcdev as "PLC Developer"
+    actor fieldEngineer as "field engineer"
+    actor maintenanceEngineer as "maintenance engineer"
+
+    plcdev-[hidden]d-fieldEngineer
+    fieldEngineer-[hidden]d-maintenanceEngineer
+  }
+
+  together {
+    component system   <<system>> as "     System     "
+  }
+
+  together {
+    component plc <<external>>    as "              PLC             " 
+    component MES <<external>>    as "Manufacturing execution system"
+
+    plc-[hidden]d-MES
+  }
+}
+system <-up-> plc
+system <-left-> MES
+plcdev -right-> system
+fieldEngineer -right-> system
+maintenanceEngineer -right-> system
+
+@enduml
+
+@startuml Context
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             true
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               10
+skinparam ArrowColor            #666
+skinparam stereotype {
+    CBackgroundColor #fff
+    CBorderColor #cccccc
+    ABackgroundColor #70bf73
+    ABorderColor #3D8C40
+    IBackgroundColor #B7161C
+    IBorderColor #b7161c
+    EBackgroundColor #ffad33
+    EBorderColor #CC7A00
+    NBackgroundColor #b052c0
+    NBorderColor #7D1F8D
+}
+skinparam title {
+	FontColor	                 #2196F3
+	BorderColor	                 #cccccc
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #fff-#fff
+}
+
+skinparam legend {
+	BackgroundColor #fff
+	BorderColor #cccccc
+	FontColor #222
+}
+
+skinparam swimlane {
+	BorderColor #9C27B0
+	BorderThickness 2
+	TitleBackgroundColor  #fff-#fff
+	TitleFontColor #2196F3
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BarColor #4CAF50
+	StartColor #9C27B0
+	EndColor #9C27B0
+	DiamondBackgroundColor #FFF-#fff
+  	DiamondBorderColor #cccccc
+	DiamondFontColor #222
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2196F3
+	FontColor #222
+}
+
+
+skinparam sequence {
+	BorderColor #2196F3
+	TitleFontColor #2196F3
+	BackgroundColor transparent
+	StartColor #2196F3
+	EndColor #2196F3
+	BoxBackgroundColor #fff
+	BoxBorderColor #666
+	BoxFontColor #222
+	LifeLineBorderColor #cccccc
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #fff
+	GroupBorderColor #666
+	GroupFontColor #222
+	GroupHeaderFontColor #9C27B0
+	DividerBackgroundColor #FFF-#fff
+    DividerBorderColor #666
+    DividerBorderThickness 2
+    DividerFontColor #222
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #666
+	ReferenceFontColor #222
+	ReferenceHeaderFontColor #9C27B0
+}
+
+
+skinparam partition {
+	BorderColor #2196F3
+	FontColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#fff
+	BorderColor #666
+	FontColor #666
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam interface {
+	BackgroundColor  #B7161C
+	BorderColor  #e51c23
+	FontColor #222
+}
+
+
+skinparam storage {
+	BackgroundColor #ffad33-#ff9800
+  	BorderColor #ff9800
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #fff-#fff
+	BorderColor #222
+	FontColor #222
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #222
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	HeaderBackgroundColor #2196F3-#1a78c2
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #fff
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam rectangle {
+	FontColor #2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam package {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#fff
+  	BorderColor #ff9800
+	FontColor #ff9800
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#fff
+  	BorderColor #9C27B0
+	FontColor #9C27B0
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderColor #1a78c2
+	StartColor #9C27B0
+	EndColor #9C27B0
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam card {
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #fff-#fff
+	BorderColor #666
+	FontColor #666
+
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+skinparam linetype ortho
+
+skinparam component {
+  BackgroundColor<<external>> Pink
+}
+together {
+  together {
+    actor plcdev as "PLC Developer"
+    actor fieldEngineer as "field engineer"
+    actor maintenanceEngineer as "maintenance engineer"
+
+    plcdev-[hidden]d-fieldEngineer
+    fieldEngineer-[hidden]d-maintenanceEngineer
+  }
+
+  together {
+    component system   <<system>> as "     System     "
+  }
+
+  together {
+    component plc <<external>>    as "              PLC             " 
+    component MES <<external>>    as "Manufacturing execution system"
+
+    plc-[hidden]d-MES
+  }
+}
+system <-up-> plc
+system <-left-> MES
+plcdev -right-> system
+fieldEngineer -right-> system
+maintenanceEngineer -right-> system
+
+@enduml
+
+PlantUML version 1.2021.11beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

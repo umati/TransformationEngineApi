@@ -1,0 +1,21 @@
+@startuml
+!include <C4/C4_Component>
+
+' Structurizr.ComponentView: OpcUaServerInProcessComponentView
+title tek - engine-3 - Components
+
+LAYOUT_WITH_LEGEND()
+
+Container(tek__dataclient__bb8560, "dataclient", "C", "vendor specific data client executable")
+Container_Boundary(tek__engine3__ea7f4a, "engine-3") {
+  Component(tek__engine3__NorthApi__232467a, "NorthApi", "", "North API")
+  Component(tek__engine3__opcuaServer__1e84ccb, "opcuaServer", "", "Generic OPC UA Server")
+  Component(tek__engine3__SouthApi__3c47a4f, "SouthApi", "", "[]")
+  Component(tek__engine3__transformationkernel__3e799b, "transformation-kernel", "", "Transformation kernel")
+}
+Rel_Up(tek__engine3__NorthApi__232467a, tek__engine3__opcuaServer__1e84ccb, "[]", "opcua")
+Rel(tek__engine3__SouthApi__3c47a4f, tek__dataclient__bb8560, "[]")
+Rel_Up(tek__engine3__transformationkernel__3e799b, tek__engine3__NorthApi__232467a, "North API")
+Rel_Down(tek__engine3__transformationkernel__3e799b, tek__engine3__SouthApi__3c47a4f, "South API")
+@enduml
+

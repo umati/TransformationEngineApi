@@ -1,0 +1,36 @@
+@startuml SouthApi
+
+class South {
+    ..Device management..
+    +addDevice()
+
+    ..Variable management..
+    +createNode()
+    +deleteNode()
+    +modifyNode()
+
+    ..Methods calls..
+    +registerMethod()
+    
+    ..Polling Read..
+    +registerBlockRead()
+    +registerSyncRead()
+    +registerAsyncRead()
+
+    ..Push..
+    +updateValue()
+    +processAlarm()
+    +processEvent()
+    
+    ..Write methods..
+    +registerBlockWrite()
+    +registerSyncWrite()
+    +registerAsyncWrite()
+}
+
+note right of South::createNode
+  add a new variable to the south api address space
+end note
+
+
+@enduml

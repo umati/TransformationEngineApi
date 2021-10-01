@@ -1,0 +1,28 @@
+@startuml Container
+
+!include ../materia-theme.puml
+skinparam linetype ortho
+
+skinparam component {
+  BackgroundColor<<external>> Pink
+}
+
+component engine as "transformation engine"
+note "variant a: data client is loaded directly by engine to minimize\nnetwork communication overhead" as engine_load_dc
+component dc_wrapper as "data client wrapper"
+note "variant b: loading and usage of data client is not in process\nof engine itself to mitigate problems with third\nparty data clients.\nCommunication with transformation engine is implemented\nwith internal wire protocol." as wrapper_loads_dc
+component controller <<external>>
+component opc_ua_server as "OPC UA Server" <<external>>
+component dc as "OEM Dataclient" <<external>>
+
+engine -up-> opc_ua_server
+engine -down-> dc : <<load>>
+engine .left. engine_load_dc
+engine_load_dc .down. dc
+engine -right-> dc_wrapper
+dc_wrapper -down-> dc : <<load>>
+dc_wrapper .right. wrapper_loads_dc
+wrapper_loads_dc .left. dc
+dc -down-> controller
+
+@enduml

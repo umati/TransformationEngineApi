@@ -1,0 +1,19 @@
+
+@startuml
+
+!include ../materia-theme.puml
+
+[*]--> Disconnected : create(config,tek)
+Disconnected: metadata available
+Disconnected -->  Connected : connect
+Connected: communication successfully established
+Connected --> Connected : "read, write"
+Connected --> Disconnected : disconnect
+Disconnected --> [*] : destroy
+Disconnected --> Disconnected : ping
+Disconnected --> Disconnected : connection_failure
+Connected --> Connected : ping
+Connected --> Connected : ping_failure
+Connected --> Connected : communication_failure
+[*] --> [*] : invalid configuration
+@enduml

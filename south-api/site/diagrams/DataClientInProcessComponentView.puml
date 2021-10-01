@@ -1,0 +1,21 @@
+@startuml
+!include <C4/C4_Component>
+
+' Structurizr.ComponentView: DataClientInProcessComponentView
+title tek - engine-4 - Components
+
+LAYOUT_WITH_LEGEND()
+
+System_Ext(opcauservercontainer__1e6fa8e, "opcau-server-container", "OPC UA Server")
+Container_Boundary(tek__engine4__9585cb, "engine-4") {
+  Component(tek__engine4__dataclient__1a0e24, "dataclient", "", "Data Client")
+  Component(tek__engine4__NorthApi__34f5582, "NorthApi", "", "North API")
+  Component(tek__engine4__SouthApi__1ca0192, "SouthApi", "", "[]")
+  Component(tek__engine4__transformationkernel__141b42a, "transformation-kernel", "", "Transformation kernel")
+}
+Rel_Up(tek__engine4__NorthApi__34f5582, opcauservercontainer__1e6fa8e, "[]", "opcua")
+Rel(tek__engine4__SouthApi__1ca0192, tek__engine4__dataclient__1a0e24, "[]")
+Rel_Up(tek__engine4__transformationkernel__141b42a, tek__engine4__NorthApi__34f5582, "North API")
+Rel_Down(tek__engine4__transformationkernel__141b42a, tek__engine4__SouthApi__1ca0192, "South API")
+@enduml
+
