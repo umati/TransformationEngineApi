@@ -137,7 +137,7 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The interface of one instance of a data client. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01034">1034</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01049">1049</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="afa9f2faf14b4fb1264f7c662da39b4f7" name="afa9f2faf14b4fb1264f7c662da39b4f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa9f2faf14b4fb1264f7c662da39b4f7">&#9670;&nbsp;</a></span>register_features</h2>
@@ -162,7 +162,7 @@ Data Fields</h2></td></tr>
 <p >A data client implementation should evaluate the configuration (passed to <a class="el" href="structtek__sa__data__client__plugin.html#aeefd50bebbd9267f23514ee7bad45d2f" title="Allocates and initializes the data client with a configuration. Prepare callbacks in data_client.">tek_sa_data_client_plugin::data_client_new</a>) and register all known types fields, events, methods and alarms.</p>
 <p >A connection to the controller must not be established. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01052">1052</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01067">1067</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -183,7 +183,7 @@ Data Fields</h2></td></tr>
 <p >A data client implementation should connect to the data source and register additional features and capabilities.</p>
 <p >If the data client can not connect to the data source it should keep trying to connect after the method call completed but it should not block. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01066">1066</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01081">1081</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +202,7 @@ Data Fields</h2></td></tr>
 <p>Frees the data client and releases all its resources. </p>
 <p >Should be called by the TEK. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01073">1073</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01088">1088</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -247,7 +247,7 @@ any other error which applies to the read function </dd></dl>
 Possible call sequences</div>
 </div>
  
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01167">1167</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01182">1182</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ Possible call sequences</div>
 </dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>[B, TEAM] should the data client call a progress function if the operation needs more time? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01189">1189</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01204">1204</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ Possible call sequences</div>
 <dl class="section return"><dt>Returns</dt><dd>An information about the success or failure of the operation.</dd></dl>
 <p>The data is not yet passed to this method directly but sent from the data client in chunks to the <a class="el" href="structtek__sa__transformation__engine.html#a4b1ed44cdd087daed93f678e0e1452ee" title="Callback from the data client to the TEK signaling the next data chunk of the block transfer.">tek_sa_transformation_engine::block_read_data</a> callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01214">1214</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01229">1229</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +339,7 @@ Possible call sequences</div>
 <dl class="section return"><dt>Returns</dt><dd>An information about the success or failure of the operation.</dd></dl>
 <p>The data is not yet passed to this method directly but requested from the data client in chunks from the <a class="el" href="structtek__sa__transformation__engine.html#a48a21ae79ad2a05eae63a034a6097a26" title="Callback from the data client to the TEK requesting another chunk to write to the data client.">tek_sa_transformation_engine::block_write_data</a> callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01237">1237</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01252">1252</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ Possible call sequences</div>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>[D, TEAM] add sampling rate parameter</dd></dl>
 <p >The subscription mechanism is very easy compared to that of the OPC UA specification. The TEK can subscribe to each field only once and all changes are signaled by a call to the tek_sa_data_transformation_engine::notify_change callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01257">1257</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01272">1272</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ Possible call sequences</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01270">1270</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01285">1285</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -423,7 +423,7 @@ Possible call sequences</div>
 </dl>
 <p>The outcome of the message call is returned in the <a class="el" href="structtek__sa__transformation__engine.html#aff6ee24d0f727a4e670408bdcfa5fafa" title="Callback of a data client method call.">tek_sa_transformation_engine::call_method_result</a> callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01296">1296</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01311">1311</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ Possible call sequences</div>
 </dl>
 <p>Called by TEK to signal triggered alarm has acknowledged by TEK consumer. The alarm may or may not be raised before with a call to <a class="el" href="structtek__sa__transformation__engine.html#a5cb4f776a5e7954b424b37dfb337a274" title="Sets an alarm.">tek_sa_transformation_engine::set_alarm</a>. When the alarm condition is not true anymore, then the data client implementation has to reset the alarm and call <a class="el" href="structtek__sa__transformation__engine.html#ab2d6625f5de460141d239906faf746c9" title="Clears/resets an alarm.">tek_sa_transformation_engine::reset_alarm</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01315">1315</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01330">1330</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +467,7 @@ Possible call sequences</div>
 
 <p>The handle that is passed as first parameter in all functions of this interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01327">1327</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01342">1342</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
