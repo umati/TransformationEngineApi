@@ -6,7 +6,7 @@ var searchData=
   ['tek_5fsa_5fevent_5fhandle_3',['tek_sa_event_handle',['../group__DEF.html#gae96c888d5e5ebc9156a6a64855a98913',1,'south_api.h']]],
   ['tek_5fsa_5ffield_5fhandle_4',['tek_sa_field_handle',['../group__DEF.html#gaaeda50b6cf8eaceee5f9a016d0dba028',1,'south_api.h']]],
   ['tek_5fsa_5ffield_5fvalue_5',['tek_sa_field_value',['../group__DEF.html#gaeb0be5042c5298918190eba416ba5167',1,'south_api.h']]],
-  ['tek_5fsa_5fload_5fplugin_5ffn_6',['tek_sa_load_plugin_fn',['../group__DC.html#gae498e3e54c6b076c583a5721236ec939',1,'south_api.h']]],
+  ['tek_5fsa_5fload_5fplugin_5ffn_6',['tek_sa_load_plugin_fn',['../group__DC.html#gaac5529dbb25962ea075d9f2f18052010',1,'south_api.h']]],
   ['tek_5fsa_5fmethod_5fhandle_7',['tek_sa_method_handle',['../group__DEF.html#ga8eaffb516d286c897e099de06c8a3fc7',1,'south_api.h']]],
   ['tek_5fsa_5fresult_8',['TEK_SA_RESULT',['../group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec',1,'south_api.h']]],
   ['tek_5fsa_5ftype_5fhandle_9',['tek_sa_type_handle',['../group__DEF.html#ga1c42e98bd38f31915be03780a1cd6af5',1,'south_api.h']]],

@@ -9,6 +9,7 @@ var annotated_dup =
     [ "tek_sa_configuration", "group__DEF.html#structtek__sa__configuration", "group__DEF_structtek__sa__configuration" ],
     [ "tek_sa_data_client", "structtek__sa__data__client.html", "structtek__sa__data__client" ],
     [ "tek_sa_data_client_capabilities", "group__DC.html#structtek__sa__data__client__capabilities", "group__DC_structtek__sa__data__client__capabilities" ],
+    [ "tek_sa_data_client_configuration", "group__DEF.html#structtek__sa__data__client__configuration", "group__DEF_structtek__sa__data__client__configuration" ],
     [ "tek_sa_data_client_plugin", "structtek__sa__data__client__plugin.html", "structtek__sa__data__client__plugin" ],
     [ "tek_sa_dc_event", "group__DEF.html#structtek__sa__dc__event", "group__DEF_structtek__sa__dc__event" ],
     [ "tek_sa_enum_definition", "group__DEF.html#structtek__sa__enum__definition", "group__DEF_structtek__sa__enum__definition" ],

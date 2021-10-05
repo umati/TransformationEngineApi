@@ -99,9 +99,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a63fa2cacdabba44df1e3276bbb008841"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__data__client__plugin.html#a63fa2cacdabba44df1e3276bbb008841">plugin_context</a></td></tr>
 <tr class="memdesc:a63fa2cacdabba44df1e3276bbb008841"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (private) plugin context. Must be freed using free_context on unloading the plugin.  <a href="structtek__sa__data__client__plugin.html#a63fa2cacdabba44df1e3276bbb008841">More...</a><br /></td></tr>
 <tr class="separator:a63fa2cacdabba44df1e3276bbb008841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeefd50bebbd9267f23514ee7bad45d2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__data__client__plugin.html#aeefd50bebbd9267f23514ee7bad45d2f">data_client_new</a> )(void *<a class="el" href="structtek__sa__data__client__plugin.html#a63fa2cacdabba44df1e3276bbb008841">plugin_context</a>, const struct <a class="el" href="group__DEF.html#structtek__sa__configuration">tek_sa_configuration</a> *config, struct <a class="el" href="structtek__sa__data__client.html">tek_sa_data_client</a> *created_client, struct <a class="el" href="group__DC.html#structtek__sa__data__client__capabilities">tek_sa_data_client_capabilities</a> *capabilities)</td></tr>
-<tr class="memdesc:aeefd50bebbd9267f23514ee7bad45d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes the data client with a configuration. Prepare callbacks in data_client.  <a href="structtek__sa__data__client__plugin.html#aeefd50bebbd9267f23514ee7bad45d2f">More...</a><br /></td></tr>
-<tr class="separator:aeefd50bebbd9267f23514ee7bad45d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9662a180c664f8123d9472556164bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__data__client__plugin.html#a6f9662a180c664f8123d9472556164bb">data_client_new</a> )(void *<a class="el" href="structtek__sa__data__client__plugin.html#a63fa2cacdabba44df1e3276bbb008841">plugin_context</a>, const struct <a class="el" href="group__DEF.html#structtek__sa__data__client__configuration">tek_sa_data_client_configuration</a> *config, struct <a class="el" href="structtek__sa__data__client.html">tek_sa_data_client</a> *created_client, struct <a class="el" href="group__DC.html#structtek__sa__data__client__capabilities">tek_sa_data_client_capabilities</a> *capabilities)</td></tr>
+<tr class="memdesc:a6f9662a180c664f8123d9472556164bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes the data client with a configuration. Prepare callbacks in data_client.  <a href="structtek__sa__data__client__plugin.html#a6f9662a180c664f8123d9472556164bb">More...</a><br /></td></tr>
+<tr class="separator:a6f9662a180c664f8123d9472556164bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c577b8247d233d64bf8396a8157645"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__data__client__plugin.html#a78c577b8247d233d64bf8396a8157645">free_context</a> )(void *<a class="el" href="structtek__sa__data__client__plugin.html#a63fa2cacdabba44df1e3276bbb008841">plugin_context</a>)</td></tr>
 <tr class="memdesc:a78c577b8247d233d64bf8396a8157645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the private context of the plugin.  <a href="structtek__sa__data__client__plugin.html#a78c577b8247d233d64bf8396a8157645">More...</a><br /></td></tr>
 <tr class="separator:a78c577b8247d233d64bf8396a8157645"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,7 +110,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p >Interface of the data client plugin. </p>
 <p >The data client plugin is created once as result of a call to the <code>load_plugin</code> method(); </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01369">1369</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01379">1379</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a63fa2cacdabba44df1e3276bbb008841" name="a63fa2cacdabba44df1e3276bbb008841"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a63fa2cacdabba44df1e3276bbb008841">&#9670;&nbsp;</a></span>plugin_context</h2>
@@ -126,18 +126,18 @@ Data Fields</h2></td></tr>
 
 <p>The (private) plugin context. Must be freed using free_context on unloading the plugin. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01374">1374</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01384">1384</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="aeefd50bebbd9267f23514ee7bad45d2f" name="aeefd50bebbd9267f23514ee7bad45d2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeefd50bebbd9267f23514ee7bad45d2f">&#9670;&nbsp;</a></span>data_client_new</h2>
+<a id="a6f9662a180c664f8123d9472556164bb" name="a6f9662a180c664f8123d9472556164bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9662a180c664f8123d9472556164bb">&#9670;&nbsp;</a></span>data_client_new</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_data_client_plugin::data_client_new) (void *<a class="el" href="structtek__sa__data__client__plugin.html#a63fa2cacdabba44df1e3276bbb008841">plugin_context</a>, const struct <a class="el" href="group__DEF.html#structtek__sa__configuration">tek_sa_configuration</a> *config, struct <a class="el" href="structtek__sa__data__client.html">tek_sa_data_client</a> *created_client, struct <a class="el" href="group__DC.html#structtek__sa__data__client__capabilities">tek_sa_data_client_capabilities</a> *capabilities)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_data_client_plugin::data_client_new) (void *<a class="el" href="structtek__sa__data__client__plugin.html#a63fa2cacdabba44df1e3276bbb008841">plugin_context</a>, const struct <a class="el" href="group__DEF.html#structtek__sa__data__client__configuration">tek_sa_data_client_configuration</a> *config, struct <a class="el" href="structtek__sa__data__client.html">tek_sa_data_client</a> *created_client, struct <a class="el" href="group__DC.html#structtek__sa__data__client__capabilities">tek_sa_data_client_capabilities</a> *capabilities)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -155,7 +155,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>failure code or success </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01392">1392</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01402">1402</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -173,7 +173,7 @@ Data Fields</h2></td></tr>
 
 <p>Frees the private context of the plugin. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01399">1399</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01409">1409</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>

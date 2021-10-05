@@ -4,10 +4,13 @@ var group__DEF =
       [ "name", "group__DEF.html#a1c04592fa17edbe5e6022e9c24f557ce", null ],
       [ "content", "group__DEF.html#ac55f2d6f6dc29e2f32ac9f1e761e0cfc", null ]
     ] ],
+    [ "tek_sa_data_client_configuration", "group__DEF.html#structtek__sa__data__client__configuration", [
+      [ "config", "group__DEF.html#a37105802f608e44b2126849697500b86", null ],
+      [ "additional_files", "group__DEF.html#a9a4483ae016f326c84d99386629e6194", null ],
+      [ "additional_files_count", "group__DEF.html#aa13be390a5fece5138356133a1b18c9d", null ]
+    ] ],
     [ "tek_sa_configuration", "group__DEF.html#structtek__sa__configuration", [
-      [ "config", "group__DEF.html#a559bf15dbb74195d31b3d65ef81c4115", null ],
-      [ "additional_files", "group__DEF.html#a63b55dede1548fd1eb21e07343ab68fa", null ],
-      [ "additional_files_count", "group__DEF.html#a5594ba68c4e713d70faf626498ead88d", null ]
+      [ "request_timeout_ms", "group__DEF.html#a83db2ff792be034d048572a62c679632", null ]
     ] ],
     [ "tek_sa_guid", "group__DEF.html#structtek__sa__guid", [
       [ "data1", "group__DEF.html#a1b9fd3e399c27f9de240d3058a0cf43b", null ],

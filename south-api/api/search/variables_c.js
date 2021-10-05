@@ -10,5 +10,6 @@ var searchData=
   ['register_5ffield_7',['register_field',['../structtek__sa__transformation__engine.html#ad78b86a5fc597c519f6d1ac64fb55075',1,'tek_sa_transformation_engine']]],
   ['register_5fmethod_8',['register_method',['../structtek__sa__transformation__engine.html#aa15a57415f7a7499fd326098805f0d30',1,'tek_sa_transformation_engine']]],
   ['register_5fstruct_5ftype_9',['register_struct_type',['../structtek__sa__transformation__engine.html#a904c7f7ed8dd1326b1c64ce22eba7fca',1,'tek_sa_transformation_engine']]],
-  ['reset_5falarm_10',['reset_alarm',['../structtek__sa__transformation__engine.html#ab2d6625f5de460141d239906faf746c9',1,'tek_sa_transformation_engine']]]
+  ['request_5ftimeout_5fms_10',['request_timeout_ms',['../group__DEF.html#a83db2ff792be034d048572a62c679632',1,'tek_sa_configuration']]],
+  ['reset_5falarm_11',['reset_alarm',['../structtek__sa__transformation__engine.html#ab2d6625f5de460141d239906faf746c9',1,'tek_sa_transformation_engine']]]
 ];

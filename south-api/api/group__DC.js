@@ -20,11 +20,11 @@ var group__DC =
     ] ],
     [ "tek_sa_data_client_plugin", "structtek__sa__data__client__plugin.html", [
       [ "plugin_context", "structtek__sa__data__client__plugin.html#a63fa2cacdabba44df1e3276bbb008841", null ],
-      [ "data_client_new", "structtek__sa__data__client__plugin.html#aeefd50bebbd9267f23514ee7bad45d2f", null ],
+      [ "data_client_new", "structtek__sa__data__client__plugin.html#a6f9662a180c664f8123d9472556164bb", null ],
       [ "free_context", "structtek__sa__data__client__plugin.html#a78c577b8247d233d64bf8396a8157645", null ]
     ] ],
     [ "tek_sa_data_client_handle", "group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd", null ],
-    [ "tek_sa_load_plugin_fn", "group__DC.html#gae498e3e54c6b076c583a5721236ec939", null ],
+    [ "tek_sa_load_plugin_fn", "group__DC.html#gaac5529dbb25962ea075d9f2f18052010", null ],
     [ "tek_sa_threading_model", "group__DC.html#gaac5eb92f2b8110971e992fa0b0e0d507", [
       [ "TEK_SA_THREADING_MODEL_SAME_THREAD", "group__DC.html#ggaac5eb92f2b8110971e992fa0b0e0d507a4dacd00a70a881bf253a5adf55cc8093", null ],
       [ "TEK_SA_THREADING_MODEL_SEQUENTIAL", "group__DC.html#ggaac5eb92f2b8110971e992fa0b0e0d507af2e7c8d50e46eea8af40307ed0b657de", null ],

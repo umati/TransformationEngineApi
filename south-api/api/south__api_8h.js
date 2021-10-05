@@ -29,7 +29,7 @@ var south__api_8h =
     [ "tek_sa_alarm_handle", "group__DEF.html#ga7c754571d5e9ce527db9859e5bc2a1f9", null ],
     [ "tek_sa_method_handle", "group__DEF.html#ga8eaffb516d286c897e099de06c8a3fc7", null ],
     [ "TEK_SA_RESULT", "group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec", null ],
-    [ "tek_sa_load_plugin_fn", "group__DC.html#gae498e3e54c6b076c583a5721236ec939", null ],
+    [ "tek_sa_load_plugin_fn", "group__DC.html#gaac5529dbb25962ea075d9f2f18052010", null ],
     [ "tek_sa_variant_type", "group__DEF.html#ga362de491513c2ce44c209e4026c171e7", [
       [ "TEK_SA_VARIANT_TYPE_NULL", "group__DEF.html#gga362de491513c2ce44c209e4026c171e7a2f130c3720199358c13957b860a354db", null ],
       [ "TEK_SA_VARIANT_TYPE_BOOL", "group__DEF.html#gga362de491513c2ce44c209e4026c171e7a9a02dc699d0a26b8aaa2b37c70ab542a", null ],
