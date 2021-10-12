@@ -2,57 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://transformationengine.umati.org/index.html</loc>
-         <lastmod>2021-10-05</lastmod>
+         <lastmod>2021-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://transformationengine.umati.org/decisions/001-dataclient-interface-type.html</loc>
-         <lastmod>2021-10-05</lastmod>
+         <lastmod>2021-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://transformationengine.umati.org/decisions/002-api-artifacts.html</loc>
-         <lastmod>2021-10-05</lastmod>
+         <lastmod>2021-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://transformationengine.umati.org/decisions/003-read-access.html</loc>
-         <lastmod>2021-10-05</lastmod>
+         <lastmod>2021-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://transformationengine.umati.org/decisions/004-threading-model.html</loc>
-         <lastmod>2021-10-05</lastmod>
+         <lastmod>2021-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://transformationengine.umati.org/decisions/005-error-codes.html</loc>
-         <lastmod>2021-10-05</lastmod>
+         <lastmod>2021-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://transformationengine.umati.org/decisions/006-text-encoding.html</loc>
-         <lastmod>2021-10-05</lastmod>
+         <lastmod>2021-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://transformationengine.umati.org/decisions/007-memory-allocation.html</loc>
-         <lastmod>2021-10-05</lastmod>
+         <lastmod>2021-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://transformationengine.umati.org/decisions/008-configuration-structure.html</loc>
-         <lastmod>2021-10-05</lastmod>
+         <lastmod>2021-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://transformationengine.umati.org/decisions/009-data-client-model-access.html</loc>
-         <lastmod>2021-10-05</lastmod>
+         <lastmod>2021-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://transformationengine.umati.org/decisions/010-opc-ua-data-source-integration.html</loc>
-         <lastmod>2021-10-05</lastmod>
+         <lastmod>2021-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

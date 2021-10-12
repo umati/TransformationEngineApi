@@ -95,28 +95,28 @@ $(document).ready(function(){initNavTree('structtek__sa__transformation__engine.
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Registration functions for data client operations and data fields</div></td></tr>
-<tr class="memitem:ad78b86a5fc597c519f6d1ac64fb55075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gaaeda50b6cf8eaceee5f9a016d0dba028">tek_sa_field_handle</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#ad78b86a5fc597c519f6d1ac64fb55075">register_field</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, enum <a class="el" href="group__DEF.html#ga47e65c02c23ea266c36a6e223424313b">tek_sa_field_attributes</a> attributes, enum <a class="el" href="group__DEF.html#ga362de491513c2ce44c209e4026c171e7">tek_sa_variant_type</a> type)</td></tr>
-<tr class="memdesc:ad78b86a5fc597c519f6d1ac64fb55075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new field of a data client with a name inside the TEK.  <a href="structtek__sa__transformation__engine.html#ad78b86a5fc597c519f6d1ac64fb55075">More...</a><br /></td></tr>
-<tr class="separator:ad78b86a5fc597c519f6d1ac64fb55075"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa15a57415f7a7499fd326098805f0d30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#ga8eaffb516d286c897e099de06c8a3fc7">tek_sa_method_handle</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#aa15a57415f7a7499fd326098805f0d30">register_method</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, struct <a class="el" href="group__DEF.html#structtek__sa__method__argument__description">tek_sa_method_argument_description</a> input_parameter[], size_t number_of_input_parameters, struct <a class="el" href="group__DEF.html#structtek__sa__method__argument__description">tek_sa_method_argument_description</a> output_parameter[], size_t number_of_output_parameters)</td></tr>
-<tr class="memdesc:aa15a57415f7a7499fd326098805f0d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new method at the TEK.  <a href="structtek__sa__transformation__engine.html#aa15a57415f7a7499fd326098805f0d30">More...</a><br /></td></tr>
-<tr class="separator:aa15a57415f7a7499fd326098805f0d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ed61927a36aebe3367aa43790d4f047"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gae96c888d5e5ebc9156a6a64855a98913">tek_sa_event_handle</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a8ed61927a36aebe3367aa43790d4f047">register_event</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name)</td></tr>
-<tr class="memdesc:a8ed61927a36aebe3367aa43790d4f047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new Event that a data client might raise.  <a href="structtek__sa__transformation__engine.html#a8ed61927a36aebe3367aa43790d4f047">More...</a><br /></td></tr>
-<tr class="separator:a8ed61927a36aebe3367aa43790d4f047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a151461526f4211adea1f8facec014c50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#ga7c754571d5e9ce527db9859e5bc2a1f9">tek_sa_alarm_handle</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a151461526f4211adea1f8facec014c50">register_alarm</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, const int16_t severity, const <a class="el" href="group__DEF.html#gaaeda50b6cf8eaceee5f9a016d0dba028">tek_sa_field_handle</a> source)</td></tr>
-<tr class="memdesc:a151461526f4211adea1f8facec014c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an alarm at the TEK.  <a href="structtek__sa__transformation__engine.html#a151461526f4211adea1f8facec014c50">More...</a><br /></td></tr>
-<tr class="separator:a151461526f4211adea1f8facec014c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ade9e9acd1bb9808c16a04d9e395be9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a6ade9e9acd1bb9808c16a04d9e395be9">register_field</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, enum <a class="el" href="group__DEF.html#ga47e65c02c23ea266c36a6e223424313b">tek_sa_field_attributes</a> attributes, enum <a class="el" href="group__DEF.html#ga362de491513c2ce44c209e4026c171e7">tek_sa_variant_type</a> type, <a class="el" href="group__DEF.html#gaaeda50b6cf8eaceee5f9a016d0dba028">tek_sa_field_handle</a> *new_field_handle)</td></tr>
+<tr class="memdesc:a6ade9e9acd1bb9808c16a04d9e395be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new field of a data client with a name inside the TEK.  <a href="structtek__sa__transformation__engine.html#a6ade9e9acd1bb9808c16a04d9e395be9">More...</a><br /></td></tr>
+<tr class="separator:a6ade9e9acd1bb9808c16a04d9e395be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6012561bad8d74867c55290bf6c2bfe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a6012561bad8d74867c55290bf6c2bfe2">register_method</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, struct <a class="el" href="group__DEF.html#structtek__sa__method__argument__description">tek_sa_method_argument_description</a> input_parameter[], size_t number_of_input_parameters, struct <a class="el" href="group__DEF.html#structtek__sa__method__argument__description">tek_sa_method_argument_description</a> output_parameter[], uint32_t number_of_output_parameters, <a class="el" href="group__DEF.html#ga8eaffb516d286c897e099de06c8a3fc7">tek_sa_method_handle</a> *new_method_handle)</td></tr>
+<tr class="memdesc:a6012561bad8d74867c55290bf6c2bfe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new method at the TEK.  <a href="structtek__sa__transformation__engine.html#a6012561bad8d74867c55290bf6c2bfe2">More...</a><br /></td></tr>
+<tr class="separator:a6012561bad8d74867c55290bf6c2bfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5044693e9d5b7a39c9970ea08b7476da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a5044693e9d5b7a39c9970ea08b7476da">register_event</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, <a class="el" href="group__DEF.html#gae96c888d5e5ebc9156a6a64855a98913">tek_sa_event_handle</a> *new_event_handle)</td></tr>
+<tr class="memdesc:a5044693e9d5b7a39c9970ea08b7476da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new Event that a data client might raise.  <a href="structtek__sa__transformation__engine.html#a5044693e9d5b7a39c9970ea08b7476da">More...</a><br /></td></tr>
+<tr class="separator:a5044693e9d5b7a39c9970ea08b7476da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8835cd5faabd879e153ecf75b1f515b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a8835cd5faabd879e153ecf75b1f515b5">register_alarm</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, const int16_t severity, const <a class="el" href="group__DEF.html#gaaeda50b6cf8eaceee5f9a016d0dba028">tek_sa_field_handle</a> source, <a class="el" href="group__DEF.html#ga7c754571d5e9ce527db9859e5bc2a1f9">tek_sa_alarm_handle</a> *new_alarm_handle)</td></tr>
+<tr class="memdesc:a8835cd5faabd879e153ecf75b1f515b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an alarm at the TEK.  <a href="structtek__sa__transformation__engine.html#a8835cd5faabd879e153ecf75b1f515b5">More...</a><br /></td></tr>
+<tr class="separator:a8835cd5faabd879e153ecf75b1f515b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Registration functions for extended types</div></td></tr>
-<tr class="memitem:aa3848c29dd4ba80f0e9744986cfa1f1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#aa3848c29dd4ba80f0e9744986cfa1f1b">register_enum_type</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DEF.html#structtek__sa__enum__definition">tek_sa_enum_definition</a> const *type_definition, <a class="el" href="group__DEF.html#ga1c42e98bd38f31915be03780a1cd6af5">tek_sa_type_handle</a> *result)</td></tr>
-<tr class="memdesc:aa3848c29dd4ba80f0e9744986cfa1f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a user defined enum type.  <a href="structtek__sa__transformation__engine.html#aa3848c29dd4ba80f0e9744986cfa1f1b">More...</a><br /></td></tr>
-<tr class="separator:aa3848c29dd4ba80f0e9744986cfa1f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a904c7f7ed8dd1326b1c64ce22eba7fca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a904c7f7ed8dd1326b1c64ce22eba7fca">register_struct_type</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DEF.html#structtek__sa__struct__definition">tek_sa_struct_definition</a> const *type_definition, <a class="el" href="group__DEF.html#ga1c42e98bd38f31915be03780a1cd6af5">tek_sa_type_handle</a> *result)</td></tr>
-<tr class="memdesc:a904c7f7ed8dd1326b1c64ce22eba7fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a user defined struct type.  <a href="structtek__sa__transformation__engine.html#a904c7f7ed8dd1326b1c64ce22eba7fca">More...</a><br /></td></tr>
-<tr class="separator:a904c7f7ed8dd1326b1c64ce22eba7fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ff62ca2839300314957176bca019cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#ae1ff62ca2839300314957176bca019cc">register_enum_type</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DEF.html#structtek__sa__enum__definition">tek_sa_enum_definition</a> const *type_definition, <a class="el" href="group__DEF.html#ga1c42e98bd38f31915be03780a1cd6af5">tek_sa_type_handle</a> *new_type_handle)</td></tr>
+<tr class="memdesc:ae1ff62ca2839300314957176bca019cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a user defined enum type.  <a href="structtek__sa__transformation__engine.html#ae1ff62ca2839300314957176bca019cc">More...</a><br /></td></tr>
+<tr class="separator:ae1ff62ca2839300314957176bca019cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc23f5e620ffa251c5bf2a85c6185370"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#abc23f5e620ffa251c5bf2a85c6185370">register_struct_type</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DEF.html#structtek__sa__struct__definition">tek_sa_struct_definition</a> const *type_definition, <a class="el" href="group__DEF.html#ga1c42e98bd38f31915be03780a1cd6af5">tek_sa_type_handle</a> *new_type_handle)</td></tr>
+<tr class="memdesc:abc23f5e620ffa251c5bf2a85c6185370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a user defined struct type.  <a href="structtek__sa__transformation__engine.html#abc23f5e620ffa251c5bf2a85c6185370">More...</a><br /></td></tr>
+<tr class="separator:abc23f5e620ffa251c5bf2a85c6185370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Alarm and Event functions</div></td></tr>
 <tr class="memitem:a7d273a24abe09077750642ee368b8267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a7d273a24abe09077750642ee368b8267">post_event</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DEF.html#structtek__sa__dc__event">tek_sa_dc_event</a> const *event)</td></tr>
-<tr class="memdesc:a7d273a24abe09077750642ee368b8267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post an event which was declared with a call to either <a class="el" href="structtek__sa__transformation__engine.html#a5c8abd1e3139d3da7a7eae8cdc96e4ec">get_global_event</a> or <a class="el" href="structtek__sa__transformation__engine.html#a8ed61927a36aebe3367aa43790d4f047">register_event</a>.  <a href="structtek__sa__transformation__engine.html#a7d273a24abe09077750642ee368b8267">More...</a><br /></td></tr>
+<tr class="memdesc:a7d273a24abe09077750642ee368b8267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post an event which was declared with a call to either <a class="el" href="structtek__sa__transformation__engine.html#a5c8abd1e3139d3da7a7eae8cdc96e4ec">get_global_event</a> or <a class="el" href="structtek__sa__transformation__engine.html#a5044693e9d5b7a39c9970ea08b7476da">register_event</a>.  <a href="structtek__sa__transformation__engine.html#a7d273a24abe09077750642ee368b8267">More...</a><br /></td></tr>
 <tr class="separator:a7d273a24abe09077750642ee368b8267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb4f776a5e7954b424b37dfb337a274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a5cb4f776a5e7954b424b37dfb337a274">set_alarm</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const <a class="el" href="group__DEF.html#ga7c754571d5e9ce527db9859e5bc2a1f9">tek_sa_alarm_handle</a> alarm)</td></tr>
 <tr class="memdesc:a5cb4f776a5e7954b424b37dfb337a274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an alarm.  <a href="structtek__sa__transformation__engine.html#a5cb4f776a5e7954b424b37dfb337a274">More...</a><br /></td></tr>
@@ -125,56 +125,56 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:ab2d6625f5de460141d239906faf746c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears/resets an alarm.  <a href="structtek__sa__transformation__engine.html#ab2d6625f5de460141d239906faf746c9">More...</a><br /></td></tr>
 <tr class="separator:ab2d6625f5de460141d239906faf746c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Miscellaneous functions</div></td></tr>
-<tr class="memitem:ac69ba874a49c5b352fc869bfe871a290"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#ac69ba874a49c5b352fc869bfe871a290">log</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> source, enum <a class="el" href="group__DEF.html#gaf411f787563c0777965ad46558dfaec6">tek_sa_log_level_t</a> lvl, const char *format, va_list args)</td></tr>
-<tr class="memdesc:ac69ba874a49c5b352fc869bfe871a290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging function for data clients.  <a href="structtek__sa__transformation__engine.html#ac69ba874a49c5b352fc869bfe871a290">More...</a><br /></td></tr>
-<tr class="separator:ac69ba874a49c5b352fc869bfe871a290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f8e57e4048b83ca9fb59a12931be98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a73f8e57e4048b83ca9fb59a12931be98">log</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> source, enum <a class="el" href="group__DEF.html#gaf411f787563c0777965ad46558dfaec6">tek_sa_log_level_t</a> lvl, const char *format, va_list args)</td></tr>
+<tr class="memdesc:a73f8e57e4048b83ca9fb59a12931be98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging function for data clients.  <a href="structtek__sa__transformation__engine.html#a73f8e57e4048b83ca9fb59a12931be98">More...</a><br /></td></tr>
+<tr class="separator:a73f8e57e4048b83ca9fb59a12931be98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8abd1e3139d3da7a7eae8cdc96e4ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gae96c888d5e5ebc9156a6a64855a98913">tek_sa_event_handle</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a5c8abd1e3139d3da7a7eae8cdc96e4ec">get_global_event</a> )(const char *name)</td></tr>
 <tr class="memdesc:a5c8abd1e3139d3da7a7eae8cdc96e4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a handle of a globally defined event.  <a href="structtek__sa__transformation__engine.html#a5c8abd1e3139d3da7a7eae8cdc96e4ec">More...</a><br /></td></tr>
 <tr class="separator:a5c8abd1e3139d3da7a7eae8cdc96e4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad17e7b0bd747416511e75e25be37f12a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#ad17e7b0bd747416511e75e25be37f12a">update_capabilities</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DC.html#structtek__sa__data__client__capabilities">tek_sa_data_client_capabilities</a> const *capabilities)</td></tr>
-<tr class="memdesc:ad17e7b0bd747416511e75e25be37f12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the TEK of the change of the client's capabilities.  <a href="structtek__sa__transformation__engine.html#ad17e7b0bd747416511e75e25be37f12a">More...</a><br /></td></tr>
-<tr class="separator:ad17e7b0bd747416511e75e25be37f12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbdb863f0204d9dda97159c2c59bc20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#afdbdb863f0204d9dda97159c2c59bc20">update_capabilities</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DC.html#structtek__sa__data__client__capabilities">tek_sa_data_client_capabilities</a> const *capabilities)</td></tr>
+<tr class="memdesc:afdbdb863f0204d9dda97159c2c59bc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the TEK of the change of the client's capabilities.  <a href="structtek__sa__transformation__engine.html#afdbdb863f0204d9dda97159c2c59bc20">More...</a><br /></td></tr>
+<tr class="separator:afdbdb863f0204d9dda97159c2c59bc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Data client callbacks</div></td></tr>
-<tr class="memitem:a6e5da26595602bf6db52c0fbd704d349"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a6e5da26595602bf6db52c0fbd704d349">read_progress</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, uint64_t progress)</td></tr>
-<tr class="memdesc:a6e5da26595602bf6db52c0fbd704d349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to signal progress of a read operation to the TEK.  <a href="structtek__sa__transformation__engine.html#a6e5da26595602bf6db52c0fbd704d349">More...</a><br /></td></tr>
-<tr class="separator:a6e5da26595602bf6db52c0fbd704d349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5829899dba54b6ac65f91fcd0a4c496a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a5829899dba54b6ac65f91fcd0a4c496a">read_result</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const struct <a class="el" href="group__DEF.html#structtek__sa__read__result">tek_sa_read_result</a> results[], size_t number_of_results)</td></tr>
-<tr class="memdesc:a5829899dba54b6ac65f91fcd0a4c496a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback of the data client read operation.  <a href="structtek__sa__transformation__engine.html#a5829899dba54b6ac65f91fcd0a4c496a">More...</a><br /></td></tr>
-<tr class="separator:a5829899dba54b6ac65f91fcd0a4c496a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcfa7340668b43f94716ea6d3f6b6c4a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#adcfa7340668b43f94716ea6d3f6b6c4a">notify_change</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const struct <a class="el" href="group__DEF.html#structtek__sa__read__result">tek_sa_read_result</a> changes[], size_t number_of_changes)</td></tr>
-<tr class="memdesc:adcfa7340668b43f94716ea6d3f6b6c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to notify about a change of subscribed data fields.  <a href="structtek__sa__transformation__engine.html#adcfa7340668b43f94716ea6d3f6b6c4a">More...</a><br /></td></tr>
-<tr class="separator:adcfa7340668b43f94716ea6d3f6b6c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab171fd5ec5fcd25929b8a4d1b8737cea"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#ab171fd5ec5fcd25929b8a4d1b8737cea">write_result</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const struct <a class="el" href="group__DEF.html#structtek__sa__write__result">tek_sa_write_result</a> results[], size_t number_of_results)</td></tr>
-<tr class="memdesc:ab171fd5ec5fcd25929b8a4d1b8737cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback of the data client write operation.  <a href="structtek__sa__transformation__engine.html#ab171fd5ec5fcd25929b8a4d1b8737cea">More...</a><br /></td></tr>
-<tr class="separator:ab171fd5ec5fcd25929b8a4d1b8737cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff6ee24d0f727a4e670408bdcfa5fafa"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#aff6ee24d0f727a4e670408bdcfa5fafa">call_method_result</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const <a class="el" href="group__DEF.html#gaeb0be5042c5298918190eba416ba5167">tek_sa_field_value</a> results[], size_t number_of_results)</td></tr>
-<tr class="memdesc:aff6ee24d0f727a4e670408bdcfa5fafa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback of a data client method call.  <a href="structtek__sa__transformation__engine.html#aff6ee24d0f727a4e670408bdcfa5fafa">More...</a><br /></td></tr>
-<tr class="separator:aff6ee24d0f727a4e670408bdcfa5fafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46da1466a222356147c43f6555a7f222"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a46da1466a222356147c43f6555a7f222">read_progress</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, uint64_t progress)</td></tr>
+<tr class="memdesc:a46da1466a222356147c43f6555a7f222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to signal progress of a read operation to the TEK.  <a href="structtek__sa__transformation__engine.html#a46da1466a222356147c43f6555a7f222">More...</a><br /></td></tr>
+<tr class="separator:a46da1466a222356147c43f6555a7f222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50ac56a3a7f0622a425e62efe33aec4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#aa50ac56a3a7f0622a425e62efe33aec4">read_result</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const struct <a class="el" href="group__DEF.html#structtek__sa__read__result">tek_sa_read_result</a> results[], size_t number_of_results)</td></tr>
+<tr class="memdesc:aa50ac56a3a7f0622a425e62efe33aec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback of the data client read operation.  <a href="structtek__sa__transformation__engine.html#aa50ac56a3a7f0622a425e62efe33aec4">More...</a><br /></td></tr>
+<tr class="separator:aa50ac56a3a7f0622a425e62efe33aec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bbfb9cc4f089f6e972a8c9c24cc6f89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a2bbfb9cc4f089f6e972a8c9c24cc6f89">notify_change</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const struct <a class="el" href="group__DEF.html#structtek__sa__read__result">tek_sa_read_result</a> changes[], size_t number_of_changes)</td></tr>
+<tr class="memdesc:a2bbfb9cc4f089f6e972a8c9c24cc6f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to notify about a change of subscribed data fields.  <a href="structtek__sa__transformation__engine.html#a2bbfb9cc4f089f6e972a8c9c24cc6f89">More...</a><br /></td></tr>
+<tr class="separator:a2bbfb9cc4f089f6e972a8c9c24cc6f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac099da208e3e5484ab7ae2d87ca120ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#ac099da208e3e5484ab7ae2d87ca120ae">write_result</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const struct <a class="el" href="group__DEF.html#structtek__sa__write__result">tek_sa_write_result</a> results[], size_t number_of_results)</td></tr>
+<tr class="memdesc:ac099da208e3e5484ab7ae2d87ca120ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback of the data client write operation.  <a href="structtek__sa__transformation__engine.html#ac099da208e3e5484ab7ae2d87ca120ae">More...</a><br /></td></tr>
+<tr class="separator:ac099da208e3e5484ab7ae2d87ca120ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69877c56bf15f623bc28f0745ae1f4de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a69877c56bf15f623bc28f0745ae1f4de">call_method_result</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const <a class="el" href="group__DEF.html#gaeb0be5042c5298918190eba416ba5167">tek_sa_field_value</a> results[], size_t number_of_results)</td></tr>
+<tr class="memdesc:a69877c56bf15f623bc28f0745ae1f4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback of a data client method call.  <a href="structtek__sa__transformation__engine.html#a69877c56bf15f623bc28f0745ae1f4de">More...</a><br /></td></tr>
+<tr class="separator:a69877c56bf15f623bc28f0745ae1f4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b1ed44cdd087daed93f678e0e1452ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a4b1ed44cdd087daed93f678e0e1452ee">block_read_data</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, unsigned char buffer[], size_t buffer_length)</td></tr>
 <tr class="memdesc:a4b1ed44cdd087daed93f678e0e1452ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback from the data client to the TEK signaling the next data chunk of the block transfer.  <a href="structtek__sa__transformation__engine.html#a4b1ed44cdd087daed93f678e0e1452ee">More...</a><br /></td></tr>
 <tr class="separator:a4b1ed44cdd087daed93f678e0e1452ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48a21ae79ad2a05eae63a034a6097a26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a48a21ae79ad2a05eae63a034a6097a26">block_write_data</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, unsigned char buffer[], size_t buffer_length, size_t *bytes_written)</td></tr>
 <tr class="memdesc:a48a21ae79ad2a05eae63a034a6097a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback from the data client to the TEK requesting another chunk to write to the data client.  <a href="structtek__sa__transformation__engine.html#a48a21ae79ad2a05eae63a034a6097a26">More...</a><br /></td></tr>
 <tr class="separator:a48a21ae79ad2a05eae63a034a6097a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa33f164bc6f335dca6fca4326ea78085"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#aa33f164bc6f335dca6fca4326ea78085">block_write_result</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result)</td></tr>
-<tr class="memdesc:aa33f164bc6f335dca6fca4326ea78085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback from the data client to the TEK with the final result of the block transfer.  <a href="structtek__sa__transformation__engine.html#aa33f164bc6f335dca6fca4326ea78085">More...</a><br /></td></tr>
-<tr class="separator:aa33f164bc6f335dca6fca4326ea78085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70122122e43e90e9f0465cd47c89762a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtek__sa__transformation__engine.html#a70122122e43e90e9f0465cd47c89762a">block_write_result</a> )(<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result)</td></tr>
+<tr class="memdesc:a70122122e43e90e9f0465cd47c89762a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback from the data client to the TEK with the final result of the block transfer.  <a href="structtek__sa__transformation__engine.html#a70122122e43e90e9f0465cd47c89762a">More...</a><br /></td></tr>
+<tr class="separator:a70122122e43e90e9f0465cd47c89762a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Interface ot the Transformation Engine. </p>
 <p >Interface exported by the TEK, which is given a data client plugin (dll/so) to interact with the TEK.</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>[A, TEAM] inconsistent register* methods signatures: always return error code or handle</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01427">1427</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01415">1415</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="ad78b86a5fc597c519f6d1ac64fb55075" name="ad78b86a5fc597c519f6d1ac64fb55075"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad78b86a5fc597c519f6d1ac64fb55075">&#9670;&nbsp;</a></span>register_field</h2>
+<a id="a6ade9e9acd1bb9808c16a04d9e395be9" name="a6ade9e9acd1bb9808c16a04d9e395be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ade9e9acd1bb9808c16a04d9e395be9">&#9670;&nbsp;</a></span>register_field</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__DEF.html#gaaeda50b6cf8eaceee5f9a016d0dba028">tek_sa_field_handle</a>(* tek_sa_transformation_engine::register_field) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, enum <a class="el" href="group__DEF.html#ga47e65c02c23ea266c36a6e223424313b">tek_sa_field_attributes</a> attributes, enum <a class="el" href="group__DEF.html#ga362de491513c2ce44c209e4026c171e7">tek_sa_variant_type</a> type)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::register_field) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, enum <a class="el" href="group__DEF.html#ga47e65c02c23ea266c36a6e223424313b">tek_sa_field_attributes</a> attributes, enum <a class="el" href="group__DEF.html#ga362de491513c2ce44c209e4026c171e7">tek_sa_variant_type</a> type, <a class="el" href="group__DEF.html#gaaeda50b6cf8eaceee5f9a016d0dba028">tek_sa_field_handle</a> *new_field_handle)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -186,23 +186,24 @@ Data Fields</h2></td></tr>
     <tr><td class="paramname">name</td><td>The name of the field. The data client decides the name. </td></tr>
     <tr><td class="paramname">attributes</td><td>The attributes of the field, e.g. is writeable. </td></tr>
     <tr><td class="paramname">type</td><td>The data type of the field. </td></tr>
+    <tr><td class="paramname">new_field_handle</td><td>result of registration, only valid when method returns TEK_SA_ERR_SUCCESS.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A valid field_handle or INVALID_FIELD_HANDLE. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TEK_SA_ERR_SUCCESS or error code when registration failed (e.g. duplicate registration, empty name...). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01441">1441</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01433">1433</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="aa15a57415f7a7499fd326098805f0d30" name="aa15a57415f7a7499fd326098805f0d30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa15a57415f7a7499fd326098805f0d30">&#9670;&nbsp;</a></span>register_method</h2>
+<a id="a6012561bad8d74867c55290bf6c2bfe2" name="a6012561bad8d74867c55290bf6c2bfe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6012561bad8d74867c55290bf6c2bfe2">&#9670;&nbsp;</a></span>register_method</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__DEF.html#ga8eaffb516d286c897e099de06c8a3fc7">tek_sa_method_handle</a>(* tek_sa_transformation_engine::register_method) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, struct <a class="el" href="group__DEF.html#structtek__sa__method__argument__description">tek_sa_method_argument_description</a> input_parameter[], size_t number_of_input_parameters, struct <a class="el" href="group__DEF.html#structtek__sa__method__argument__description">tek_sa_method_argument_description</a> output_parameter[], size_t number_of_output_parameters)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::register_method) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, struct <a class="el" href="group__DEF.html#structtek__sa__method__argument__description">tek_sa_method_argument_description</a> input_parameter[], size_t number_of_input_parameters, struct <a class="el" href="group__DEF.html#structtek__sa__method__argument__description">tek_sa_method_argument_description</a> output_parameter[], uint32_t number_of_output_parameters, <a class="el" href="group__DEF.html#ga8eaffb516d286c897e099de06c8a3fc7">tek_sa_method_handle</a> *new_method_handle)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -216,23 +217,24 @@ Data Fields</h2></td></tr>
     <tr><td class="paramname">number_of_input_parameters</td><td>The number of input parameters. </td></tr>
     <tr><td class="paramname"><a class="el" href="group__DEF.html#structtek__sa__method__argument__description" title="The description of a method parameter.">tek_sa_method_argument_description</a></td><td>The description of the method output arguments. </td></tr>
     <tr><td class="paramname">number_of_output_parameters</td><td>The number of output parameters. </td></tr>
+    <tr><td class="paramname">new_method_handle</td><td>result of registration, only valid when method returns TEK_SA_ERR_SUCCESS.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A tek_sa_method_handle. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TEK_SA_ERR_SUCCESS or error code when registration failed (e.g. duplicate registration, empty name...). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01459">1459</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01456">1456</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="a8ed61927a36aebe3367aa43790d4f047" name="a8ed61927a36aebe3367aa43790d4f047"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ed61927a36aebe3367aa43790d4f047">&#9670;&nbsp;</a></span>register_event</h2>
+<a id="a5044693e9d5b7a39c9970ea08b7476da" name="a5044693e9d5b7a39c9970ea08b7476da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5044693e9d5b7a39c9970ea08b7476da">&#9670;&nbsp;</a></span>register_event</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__DEF.html#gae96c888d5e5ebc9156a6a64855a98913">tek_sa_event_handle</a>(* tek_sa_transformation_engine::register_event) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::register_event) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, <a class="el" href="group__DEF.html#gae96c888d5e5ebc9156a6a64855a98913">tek_sa_event_handle</a> *new_event_handle)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -242,24 +244,25 @@ Data Fields</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">dc</td><td>The data client that registers at the TEK. </td></tr>
     <tr><td class="paramname">name</td><td>The name of the event. Must be unique within all events registered from this dc. </td></tr>
+    <tr><td class="paramname">new_event_handle</td><td>result of registration, only valid when method returns TEK_SA_ERR_SUCCESS.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A tek_sa_event_handle or TEK_SA_EVENT_HANDLE_INVALID, if the event registration failed (e.g. duplicate registration, empty name...).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TEK_SA_ERR_SUCCESS or error code when registration failed (e.g. duplicate registration, empty name...).</dd></dl>
 <p>The TEK ensures that the set of handles between the predefined events and the registered events are disjoint. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01478">1478</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01479">1479</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="a151461526f4211adea1f8facec014c50" name="a151461526f4211adea1f8facec014c50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a151461526f4211adea1f8facec014c50">&#9670;&nbsp;</a></span>register_alarm</h2>
+<a id="a8835cd5faabd879e153ecf75b1f515b5" name="a8835cd5faabd879e153ecf75b1f515b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8835cd5faabd879e153ecf75b1f515b5">&#9670;&nbsp;</a></span>register_alarm</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__DEF.html#ga7c754571d5e9ce527db9859e5bc2a1f9">tek_sa_alarm_handle</a>(* tek_sa_transformation_engine::register_alarm) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, const int16_t severity, const <a class="el" href="group__DEF.html#gaaeda50b6cf8eaceee5f9a016d0dba028">tek_sa_field_handle</a> source)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::register_alarm) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const char *name, const int16_t severity, const <a class="el" href="group__DEF.html#gaaeda50b6cf8eaceee5f9a016d0dba028">tek_sa_field_handle</a> source, <a class="el" href="group__DEF.html#ga7c754571d5e9ce527db9859e5bc2a1f9">tek_sa_alarm_handle</a> *new_alarm_handle)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -271,23 +274,24 @@ Data Fields</h2></td></tr>
     <tr><td class="paramname">name</td><td>The name of the new alarm, must be unique within all alarms registered for this data client. </td></tr>
     <tr><td class="paramname">severity</td><td>The alarm severity level. </td></tr>
     <tr><td class="paramname">source</td><td>field the alarm relates to, the same field can be used for multiple alarms. </td></tr>
+    <tr><td class="paramname">new_alarm_handle</td><td>result of registration only valid when method returns TEK_SA_ERR_SUCCESS.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A tek_sa_alarm_handle or TEK_SA_ALARM_HANDLE_INVALID, if the alarm registration failed (e.g. duplicate registration, empty name...). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TEK_SA_ERR_SUCCESS or error code when registration failed (e.g. duplicate registration, empty name...). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01494">1494</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01498">1498</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="aa3848c29dd4ba80f0e9744986cfa1f1b" name="aa3848c29dd4ba80f0e9744986cfa1f1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3848c29dd4ba80f0e9744986cfa1f1b">&#9670;&nbsp;</a></span>register_enum_type</h2>
+<a id="ae1ff62ca2839300314957176bca019cc" name="ae1ff62ca2839300314957176bca019cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ff62ca2839300314957176bca019cc">&#9670;&nbsp;</a></span>register_enum_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::register_enum_type) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DEF.html#structtek__sa__enum__definition">tek_sa_enum_definition</a> const  *type_definition, <a class="el" href="group__DEF.html#ga1c42e98bd38f31915be03780a1cd6af5">tek_sa_type_handle</a> *result)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::register_enum_type) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DEF.html#structtek__sa__enum__definition">tek_sa_enum_definition</a> const  *type_definition, <a class="el" href="group__DEF.html#ga1c42e98bd38f31915be03780a1cd6af5">tek_sa_type_handle</a> *new_type_handle)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -297,24 +301,25 @@ Data Fields</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">dc</td><td>The data client that registers at the TEK. </td></tr>
     <tr><td class="paramname"><a class="el" href="group__DEF.html#structtek__sa__enum__definition" title="The type definition of a user defined enum type.">tek_sa_enum_definition</a></td><td>The definition of the enumeration. </td></tr>
-    <tr><td class="paramname">result</td><td>A tek_sa_type_handle associated to the registered enum.</td></tr>
+    <tr><td class="paramname">result</td><td>A tek_sa_type_handle associated to the registered enum. </td></tr>
+    <tr><td class="paramname">new_type_handle</td><td>result of registration, only valid when method returns TEK_SA_ERR_SUCCESS.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>indicator whether the type definition was successfully registered </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TEK_SA_ERR_SUCCESS or error code when registration failed (e.g. duplicate registration, empty name...). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01514">1514</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01522">1522</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="a904c7f7ed8dd1326b1c64ce22eba7fca" name="a904c7f7ed8dd1326b1c64ce22eba7fca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a904c7f7ed8dd1326b1c64ce22eba7fca">&#9670;&nbsp;</a></span>register_struct_type</h2>
+<a id="abc23f5e620ffa251c5bf2a85c6185370" name="abc23f5e620ffa251c5bf2a85c6185370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc23f5e620ffa251c5bf2a85c6185370">&#9670;&nbsp;</a></span>register_struct_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::register_struct_type) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DEF.html#structtek__sa__struct__definition">tek_sa_struct_definition</a> const  *type_definition, <a class="el" href="group__DEF.html#ga1c42e98bd38f31915be03780a1cd6af5">tek_sa_type_handle</a> *result)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::register_struct_type) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DEF.html#structtek__sa__struct__definition">tek_sa_struct_definition</a> const  *type_definition, <a class="el" href="group__DEF.html#ga1c42e98bd38f31915be03780a1cd6af5">tek_sa_type_handle</a> *new_type_handle)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -324,13 +329,13 @@ Data Fields</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">dc</td><td>The data client that registers at the TEK. </td></tr>
     <tr><td class="paramname"><a class="el" href="group__DEF.html#structtek__sa__struct__definition" title="The type definition of a user defined record type.">tek_sa_struct_definition</a></td><td>The definition of the struct. </td></tr>
-    <tr><td class="paramname">result</td><td>A tek_sa_type_handle associated to the registered struct.</td></tr>
+    <tr><td class="paramname">new_type_handle</td><td>result of registration call when successful, only valid when method returns TEK_SA_ERR_SUCCESS.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>indicator whether the type definition was successfully registered </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01527">1527</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01536">1536</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +351,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Post an event which was declared with a call to either <a class="el" href="structtek__sa__transformation__engine.html#a5c8abd1e3139d3da7a7eae8cdc96e4ec">get_global_event</a> or <a class="el" href="structtek__sa__transformation__engine.html#a8ed61927a36aebe3367aa43790d4f047">register_event</a>. </p>
+<p>Post an event which was declared with a call to either <a class="el" href="structtek__sa__transformation__engine.html#a5c8abd1e3139d3da7a7eae8cdc96e4ec">get_global_event</a> or <a class="el" href="structtek__sa__transformation__engine.html#a5044693e9d5b7a39c9970ea08b7476da">register_event</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dc</td><td>Handle of the data client which sends the event. </td></tr>
@@ -356,7 +361,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>indicator whether the event was successfully posted or not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01547">1547</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01556">1556</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -383,7 +388,7 @@ Data Fields</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>indicator whether setting the alarm was successful or not</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>[C, TEAM] called by data_client after connect, regardless of "acknowledge" calls during previous connection? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01560">1560</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01569">1569</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -409,18 +414,18 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>indicator whether resetting the alarm was successful or not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01570">1570</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01579">1579</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="ac69ba874a49c5b352fc869bfe871a290" name="ac69ba874a49c5b352fc869bfe871a290"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac69ba874a49c5b352fc869bfe871a290">&#9670;&nbsp;</a></span>log</h2>
+<a id="a73f8e57e4048b83ca9fb59a12931be98" name="a73f8e57e4048b83ca9fb59a12931be98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73f8e57e4048b83ca9fb59a12931be98">&#9670;&nbsp;</a></span>log</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* tek_sa_transformation_engine::log) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> source, enum <a class="el" href="group__DEF.html#gaf411f787563c0777965ad46558dfaec6">tek_sa_log_level_t</a> lvl, const char *format, va_list args)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::log) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> source, enum <a class="el" href="group__DEF.html#gaf411f787563c0777965ad46558dfaec6">tek_sa_log_level_t</a> lvl, const char *format, va_list args)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -433,12 +438,13 @@ Data Fields</h2></td></tr>
     <tr><td class="paramname">data_client_handle</td><td>The data client that logs a message. </td></tr>
     <tr><td class="paramname">lvl</td><td>The logging level. </td></tr>
     <tr><td class="paramname">format</td><td>The message format string. Format must be compatible to <code>printf</code>. </td></tr>
-    <tr><td class="paramname">args</td><td>A va_list that contains all the arguments for the format string. </td></tr>
+    <tr><td class="paramname">args</td><td>A va_list that contains all the arguments for the format string.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>log result status code; can be ignored normally or used for debugging. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01594">1594</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01605">1605</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -467,18 +473,18 @@ Data Fields</h2></td></tr>
 </dd></dl>
 <p >The TEK ensures that the set of handles between the predefined events and the registered events are disjoint. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01610">1610</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01621">1621</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="ad17e7b0bd747416511e75e25be37f12a" name="ad17e7b0bd747416511e75e25be37f12a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad17e7b0bd747416511e75e25be37f12a">&#9670;&nbsp;</a></span>update_capabilities</h2>
+<a id="afdbdb863f0204d9dda97159c2c59bc20" name="afdbdb863f0204d9dda97159c2c59bc20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdbdb863f0204d9dda97159c2c59bc20">&#9670;&nbsp;</a></span>update_capabilities</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* tek_sa_transformation_engine::update_capabilities) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DC.html#structtek__sa__data__client__capabilities">tek_sa_data_client_capabilities</a> const  *capabilities)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::update_capabilities) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, struct <a class="el" href="group__DC.html#structtek__sa__data__client__capabilities">tek_sa_data_client_capabilities</a> const  *capabilities)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -493,18 +499,18 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(void) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01619">1619</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01630">1630</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="a6e5da26595602bf6db52c0fbd704d349" name="a6e5da26595602bf6db52c0fbd704d349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e5da26595602bf6db52c0fbd704d349">&#9670;&nbsp;</a></span>read_progress</h2>
+<a id="a46da1466a222356147c43f6555a7f222" name="a46da1466a222356147c43f6555a7f222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46da1466a222356147c43f6555a7f222">&#9670;&nbsp;</a></span>read_progress</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* tek_sa_transformation_engine::read_progress) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, uint64_t progress)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::read_progress) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, uint64_t progress)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -521,18 +527,18 @@ Data Fields</h2></td></tr>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>[B, TEAM] when should a data client report progress?</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>[B, TEAM] when can the TEK stop the client (after progress was not reported)? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01642">1642</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01653">1653</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="a5829899dba54b6ac65f91fcd0a4c496a" name="a5829899dba54b6ac65f91fcd0a4c496a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5829899dba54b6ac65f91fcd0a4c496a">&#9670;&nbsp;</a></span>read_result</h2>
+<a id="aa50ac56a3a7f0622a425e62efe33aec4" name="aa50ac56a3a7f0622a425e62efe33aec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa50ac56a3a7f0622a425e62efe33aec4">&#9670;&nbsp;</a></span>read_result</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* tek_sa_transformation_engine::read_result) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const struct <a class="el" href="group__DEF.html#structtek__sa__read__result">tek_sa_read_result</a> results[], size_t number_of_results)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::read_result) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const struct <a class="el" href="group__DEF.html#structtek__sa__read__result">tek_sa_read_result</a> results[], size_t number_of_results)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -552,18 +558,18 @@ Data Fields</h2></td></tr>
 <p >The number of results MUST be equal to the number of fields requested in read_fields. The order of results MUST be the same as the order of fields in read_fields. The results array is only valid during the execution of the callback.</p>
 <p >If the result is failure, the TEK MUST ignore the results and number_of_results parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01666">1666</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01677">1677</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="adcfa7340668b43f94716ea6d3f6b6c4a" name="adcfa7340668b43f94716ea6d3f6b6c4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcfa7340668b43f94716ea6d3f6b6c4a">&#9670;&nbsp;</a></span>notify_change</h2>
+<a id="a2bbfb9cc4f089f6e972a8c9c24cc6f89" name="a2bbfb9cc4f089f6e972a8c9c24cc6f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bbfb9cc4f089f6e972a8c9c24cc6f89">&#9670;&nbsp;</a></span>notify_change</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* tek_sa_transformation_engine::notify_change) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const struct <a class="el" href="group__DEF.html#structtek__sa__read__result">tek_sa_read_result</a> changes[], size_t number_of_changes)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::notify_change) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, const struct <a class="el" href="group__DEF.html#structtek__sa__read__result">tek_sa_read_result</a> changes[], size_t number_of_changes)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -578,18 +584,18 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01678">1678</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01689">1689</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="ab171fd5ec5fcd25929b8a4d1b8737cea" name="ab171fd5ec5fcd25929b8a4d1b8737cea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab171fd5ec5fcd25929b8a4d1b8737cea">&#9670;&nbsp;</a></span>write_result</h2>
+<a id="ac099da208e3e5484ab7ae2d87ca120ae" name="ac099da208e3e5484ab7ae2d87ca120ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac099da208e3e5484ab7ae2d87ca120ae">&#9670;&nbsp;</a></span>write_result</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* tek_sa_transformation_engine::write_result) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const struct <a class="el" href="group__DEF.html#structtek__sa__write__result">tek_sa_write_result</a> results[], size_t number_of_results)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::write_result) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const struct <a class="el" href="group__DEF.html#structtek__sa__write__result">tek_sa_write_result</a> results[], size_t number_of_results)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -606,18 +612,18 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01692">1692</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01703">1703</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="aff6ee24d0f727a4e670408bdcfa5fafa" name="aff6ee24d0f727a4e670408bdcfa5fafa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff6ee24d0f727a4e670408bdcfa5fafa">&#9670;&nbsp;</a></span>call_method_result</h2>
+<a id="a69877c56bf15f623bc28f0745ae1f4de" name="a69877c56bf15f623bc28f0745ae1f4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69877c56bf15f623bc28f0745ae1f4de">&#9670;&nbsp;</a></span>call_method_result</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* tek_sa_transformation_engine::call_method_result) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const <a class="el" href="group__DEF.html#gaeb0be5042c5298918190eba416ba5167">tek_sa_field_value</a> results[], size_t number_of_results)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::call_method_result) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result, const <a class="el" href="group__DEF.html#gaeb0be5042c5298918190eba416ba5167">tek_sa_field_value</a> results[], size_t number_of_results)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -634,7 +640,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01708">1708</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01719">1719</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +669,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The TEK responds with success, or can abort the transfer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01729">1729</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01740">1740</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -693,18 +699,18 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success or failure code. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01746">1746</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01757">1757</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
-<a id="aa33f164bc6f335dca6fca4326ea78085" name="aa33f164bc6f335dca6fca4326ea78085"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa33f164bc6f335dca6fca4326ea78085">&#9670;&nbsp;</a></span>block_write_result</h2>
+<a id="a70122122e43e90e9f0465cd47c89762a" name="a70122122e43e90e9f0465cd47c89762a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70122122e43e90e9f0465cd47c89762a">&#9670;&nbsp;</a></span>block_write_result</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* tek_sa_transformation_engine::block_write_result) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result)</td>
+          <td class="memname"><a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a>(* tek_sa_transformation_engine::block_write_result) (<a class="el" href="group__DC.html#gab4ad42420f855e0dd9827f41cb6bb1bd">tek_sa_data_client_handle</a> dc, uint64_t request_id, <a class="el" href="group__DEF.html#gadc1227e8f6074eea225656c92e8b90ec">TEK_SA_RESULT</a> result)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -719,7 +725,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01757">1757</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01768">1768</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>

@@ -145,10 +145,6 @@ var group__DEF =
       [ "complex_array", "group__DEF.html#a629ebb436e2b415f976359f0317d8fa4", null ],
       [ "complex_matrix", "group__DEF.html#a571b52d94d8f89929c094c25323540bd", null ]
     ] ],
-    [ "TEK_SA_FIELD_HANDLE_INVALID", "group__DEF.html#ga4c54dcf8bf8248ec6f988f546b698ff3", null ],
-    [ "TEK_SA_EVENT_HANDLE_INVALID", "group__DEF.html#ga14071fb93766642c6cade8911c29e27d", null ],
-    [ "TEK_SA_ALARM_HANDLE_INVALID", "group__DEF.html#gaf7e707b048783facaa6d078dbe74bb15", null ],
-    [ "TEK_SA_METHOD_HANDLE_INVALID", "group__DEF.html#gaa37062347b1bbcd236673e22f6cfe7bf", null ],
     [ "TEK_SA_ERR_SUCCESS", "group__DEF.html#gabadd6ccee48b519dc8dc15bcc3132181", null ],
     [ "TEK_SA_ERR_NON_BLOCKING_IMPOSSIBLE", "group__DEF.html#ga9aefb5932a813ee61565a91381ac3e5e", null ],
     [ "TEK_SA_ERR_OUT_OF_MEMORY", "group__DEF.html#gaf213cfea82aba978642f2ec515df9676", null ],
@@ -160,6 +156,7 @@ var group__DEF =
     [ "TEK_SA_READ_RESULT_STATUS_INVALID_HANDLE", "group__DEF.html#ga71c3f04410f42801d15738dc802ad8e2", null ],
     [ "TEK_SA_BLOCK_TRANSFER_END_OF_FILE", "group__DEF.html#ga5dfa6822e96c3b9792af978f9e6cb3e0", null ],
     [ "TEK_SA_BLOCK_TRANSFER_ABORT", "group__DEF.html#ga90a50529fb326109fa251b6f6a8829be", null ],
+    [ "TEK_SA_ERR_UNSPECIFIED", "group__DEF.html#gaec46a9e8ae1300967b1fe955d3452539", null ],
     [ "tek_sa_type_handle", "group__DEF.html#ga1c42e98bd38f31915be03780a1cd6af5", null ],
     [ "tek_sa_type_handle_or_type_enum", "group__DEF.html#ga6563bc0bce0d1d46a6307ce7ea63fe0c", null ],
     [ "tek_sa_datetime", "group__DEF.html#gaaf672dea5b97c2e16774094850e634d0", null ],

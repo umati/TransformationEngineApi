@@ -15,7 +15,7 @@ var group__DC =
       [ "subscribe", "structtek__sa__data__client.html#ac8908fdd2fad186915aad772f83be483", null ],
       [ "unsubscribe", "structtek__sa__data__client.html#abc5a140094640a5f182737564fd3a479", null ],
       [ "invoke", "structtek__sa__data__client.html#a6472334430291cff4fa2eb019f07ca30", null ],
-      [ "acknowledge_alarm", "structtek__sa__data__client.html#a056bada01d20ec0e80df2c10871472f8", null ],
+      [ "acknowledge_alarm", "structtek__sa__data__client.html#a8b306492bafce62e56e5eedd6ca8df5a", null ],
       [ "handle", "structtek__sa__data__client.html#abea12a9c9c4844a2b132b01c797b24c0", null ]
     ] ],
     [ "tek_sa_data_client_plugin", "structtek__sa__data__client__plugin.html", [
