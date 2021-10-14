@@ -27,7 +27,9 @@
  activate TEK
  return
  note across
-  multiple calls to ""register_fields"", ""register_methods"",""register_event"", ""register_alarm"", ""register_enum_type"",""register_struct_type"" calls to ""log"", ""get_global_event"" are possible too
+  multiple calls to ""register_fields"", ""register_methods"",""register_event"", \
+ ""register_alarm"", ""register_enum_type"",""register_struct_type"" calls to ""log"", \
+ ""get_global_event"" are possible too
  end note
  DC -> TEK:register_field(handle, name, attributes, type)
  activate TEK
@@ -39,7 +41,8 @@
  TEK->DC: connect(data_client->handle)
  activate DC
  note across
-  multiple calls to ""register_*"" may happen here too calls to ""log"", ""get_global_event"" and ""update_capabilities"" are possible too
+   multiple calls to ""register_*"" may happen here too calls to ""log"", ""get_global_event"" \
+   and ""update_capabilities"" are possible too
  end note
  return RESULT
  ...
@@ -52,9 +55,11 @@ participant DC
 alt #LightGoldenRodYellow synchronous call
     TEK --> DC : read_fields(dcHandle, requestId, fields, numberOfFields,**false**)
     activate DC
-    DC->TEK: read_result(dcHandle, requestId, TEK_SA_READ_RESULT_STATUS_OK, values, numberOfValues)
+    DC->TEK: read_result(dcHandle, requestId, TEK_SA_READ_RESULT_STATUS_OK, values, \
+                         numberOfValues)
     note right
-        the number and order of values must match the parameters ""fields"" and ""numberOfFields""
+        the number and order of values must match the parameters ""fields"" and \
+        ""numberOfFields""
     end note
     return TEK_SA_ERR_SUCCESS
 ...
@@ -66,7 +71,8 @@ else #GoldenRod asynchronous call
     activate DC
     return TEK_SA_ERR_SUCCESS
 
-    DC->TEK: read_result(dcHandle, requestId,TEK_SA_READ_RESULT_STATUS_OK, values, numberOfValues)
+    DC->TEK: read_result(dcHandle, requestId,TEK_SA_READ_RESULT_STATUS_OK, values, \
+                         numberOfValues)
     note right: DC returns read values in another thread end
     ...
     else client does not support multithreading
@@ -79,7 +85,8 @@ else #GoldenRod asynchronous call
     TEK --> DC : read_fields(dcHandle,requestId, fields, numberOfFields, **false**)
     note right: the TEK will repeat the call with ""do_not_block"" set to __false__
     activate DC
-    DC->TEK: read_result(dcHandle, requestId, TEK_SA_READ_RESULT_STATUS_OK, values, numberOfValues)
+    DC->TEK: read_result(dcHandle, requestId, TEK_SA_READ_RESULT_STATUS_OK, values, \
+                         numberOfValues)
     return TEK_SA_ERR_SUCCESS
     end
     ...

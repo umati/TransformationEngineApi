@@ -7,7 +7,7 @@ var group__DEF =
     [ "tek_sa_data_client_configuration", "group__DEF.html#structtek__sa__data__client__configuration", [
       [ "config", "group__DEF.html#a37105802f608e44b2126849697500b86", null ],
       [ "additional_files", "group__DEF.html#a9a4483ae016f326c84d99386629e6194", null ],
-      [ "additional_files_count", "group__DEF.html#aa13be390a5fece5138356133a1b18c9d", null ]
+      [ "additional_files_count", "group__DEF.html#a7a502a519fe2f62a53497c5cebf0a315", null ]
     ] ],
     [ "tek_sa_configuration", "group__DEF.html#structtek__sa__configuration", [
       [ "request_timeout_ms", "group__DEF.html#a83db2ff792be034d048572a62c679632", null ]
@@ -37,22 +37,22 @@ var group__DEF =
     ] ],
     [ "tek_sa_complex_data_array", "group__DEF.html#structtek__sa__complex__data__array", [
       [ "type", "group__DEF.html#a286bf68a2f56a707f52968b9d5edf0de", null ],
-      [ "number_of_items", "group__DEF.html#ab4bbbcc33981e049b4dbf261323765fb", null ],
+      [ "number_of_items", "group__DEF.html#a707cebeefb76236471c4ec381e175c74", null ],
       [ "data", "group__DEF.html#a486e89fd1a7ea58496a80103324103ab", null ]
     ] ],
     [ "tek_sa_complex_data_matrix", "group__DEF.html#structtek__sa__complex__data__matrix", [
       [ "type", "group__DEF.html#aa83c3ff218e7c4c8e7ab91baca8dbefc", null ],
-      [ "dimension_length", "group__DEF.html#a0b8cf4c2ae425003105576ff6d7b2c5a", null ],
-      [ "dimensions", "group__DEF.html#a76a257f449a13fc90f89192605b89f6f", null ],
+      [ "dimension_length", "group__DEF.html#aa5ad65dafc5882e41815444dda3721b9", null ],
+      [ "dimensions", "group__DEF.html#a2f80e7a723e954e6bf8470f728328a0c", null ],
       [ "data", "group__DEF.html#ab80ec769a88896f5d78ee24868126522", null ]
     ] ],
     [ "tek_sa_variant_array", "group__DEF.html#structtek__sa__variant__array", [
-      [ "length", "group__DEF.html#a1f6aa97a9164b53d36663e1b92bcbfc8", null ],
+      [ "length", "group__DEF.html#a414428268ae38f01c242845974ba3a25", null ],
       [ "data", "group__DEF.html#a52ca0f439729f25f6dce3478ef675b4b", null ]
     ] ],
     [ "tek_sa_variant_matrix", "group__DEF.html#structtek__sa__variant__matrix", [
-      [ "dimension_length", "group__DEF.html#aba620fcd6c1c309010c8ef8e8e83e75f", null ],
-      [ "dimensions", "group__DEF.html#a15eb1b805db5d33b8ce80f59c52086fc", null ],
+      [ "dimension_length", "group__DEF.html#aa39c282ce2518e3613d71d5a0e2dc800", null ],
+      [ "dimensions", "group__DEF.html#ad7c0b3feeeeeaf8aa52bdbdf83dacde7", null ],
       [ "data", "group__DEF.html#a4ab18ac41315ca55b84ef5b696ff7baa", null ]
     ] ],
     [ "tek_sa_variant", "group__DEF.html#structtek__sa__variant", [
@@ -66,7 +66,7 @@ var group__DEF =
     [ "tek_sa_struct_definition", "group__DEF.html#structtek__sa__struct__definition", [
       [ "name", "group__DEF.html#a55dcb7a843e21bc482de281c6ea979bf", null ],
       [ "items", "group__DEF.html#a524601a919028e1baa663f62d2aa3c4d", null ],
-      [ "item_count", "group__DEF.html#a8040732824f7836dfa348064fb99a7a6", null ]
+      [ "item_count", "group__DEF.html#a89e75347a94d65ecc21122de7c73774a", null ]
     ] ],
     [ "tek_sa_enum_item_definition", "group__DEF.html#structtek__sa__enum__item__definition", [
       [ "name", "group__DEF.html#a7bcdb33f10b5bd365334d49ebf447f3c", null ],
@@ -75,7 +75,7 @@ var group__DEF =
     [ "tek_sa_enum_definition", "group__DEF.html#structtek__sa__enum__definition", [
       [ "name", "group__DEF.html#af04ad635d91f128a2b988a16d1226c11", null ],
       [ "items", "group__DEF.html#ab68aa971a01202622ca583af713e9d72", null ],
-      [ "item_count", "group__DEF.html#aba8b7a73c8dbfd6ede88d4814ffd69df", null ]
+      [ "item_count", "group__DEF.html#a1d4cd01903292367684b80e94011d929", null ]
     ] ],
     [ "tek_sa_method_argument_description", "group__DEF.html#structtek__sa__method__argument__description", [
       [ "name", "group__DEF.html#a32d177aa34900bc4edec7f682f9bfa54", null ],
@@ -103,7 +103,7 @@ var group__DEF =
       [ "severity", "group__DEF.html#aca4342152aa63d6b69561205fc55f29f", null ],
       [ "event_type", "group__DEF.html#a7379ffaf14cac5428ae53346cd4027ce", null ],
       [ "source", "group__DEF.html#a9dde69d39359191fed25fe6f2ec928e2", null ],
-      [ "number_of_parameters", "group__DEF.html#aa0c3ffeed3ba34b236ac60e65216a943", null ],
+      [ "number_of_parameters", "group__DEF.html#a4f3722f0e06fae6dbedb2b940e72c06a", null ],
       [ "parameters", "group__DEF.html#accaafb05b627f1df506c3f4d2bcd2b3b", null ]
     ] ],
     [ "tek_sa_variant_array.data", "group__DEF.html#uniontek__sa__variant__array_8data", [
