@@ -1,2 +1,5 @@
 title: 'umati Transformation Engine - API'
 theme: jekyll-theme-minimal
+description: This is an RFC for the API specification to easier implement standardized information models to exisiting machine architectures.
+logo: assets/umati_logo.svg
+show_downloads: false
