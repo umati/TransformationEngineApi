@@ -6,22 +6,22 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="VDW-Forschungsinstitut e.V." name="author"/>
-<link href="https://transformationengine.umati.org/decisions/006-text-encoding.html" rel="canonical"/>
-<link href="../img/favicon.ico" rel="shortcut icon"/>
-<title>006 How should text values be encoded? - umati Transformation Engine</title>
-<link href="../css/bootstrap.min.css" rel="stylesheet"/>
-<link href="../css/font-awesome.min.css" rel="stylesheet"/>
-<link href="../css/base.css" rel="stylesheet"/>
+<link href="https://transformationengine.umati.org/changelog.html" rel="canonical"/>
+<link href="img/favicon.ico" rel="shortcut icon"/>
+<title>Changelog - umati Transformation Engine</title>
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/font-awesome.min.css" rel="stylesheet"/>
+<link href="css/base.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
-<script defer="" src="../js/jquery-1.10.2.min.js"></script>
-<script defer="" src="../js/bootstrap.min.js"></script>
+<script defer="" src="js/jquery-1.10.2.min.js"></script>
+<script defer="" src="js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<link href="../pdf/TEK-SouthAPI.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
+<link href="pdf/TEK-SouthAPI.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body>
 <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 <div class="container">
-<a class="navbar-brand" href="../index.html">umati Transformation Engine</a>
+<a class="navbar-brand" href="index.html">umati Transformation Engine</a>
 <!-- Expander button -->
 <button class="navbar-toggler" data-target="#navbar-collapse" data-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
@@ -31,43 +31,43 @@
 <!-- Main navigation -->
 <ul class="nav navbar-nav">
 <li class="navitem">
-<a class="nav-link" href="../index.html">Overview</a>
+<a class="nav-link" href="index.html">Overview</a>
 </li>
-<li class="navitem">
-<a class="nav-link" href="../changelog.html">Changelog</a>
+<li class="navitem active">
+<a class="nav-link" href="changelog.html">Changelog</a>
 </li>
-<li class="dropdown active">
+<li class="dropdown">
 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Decisions <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li>
-<a class="dropdown-item" href="001-dataclient-interface-type.html">001 Type of the interface (Socket, shared library or managed code)</a>
+<a class="dropdown-item" href="decisions/001-dataclient-interface-type.html">001 Type of the interface (Socket, shared library or managed code)</a>
 </li>
 <li>
-<a class="dropdown-item" href="002-api-artifacts.html">002 API artifacts</a>
+<a class="dropdown-item" href="decisions/002-api-artifacts.html">002 API artifacts</a>
 </li>
 <li>
-<a class="dropdown-item" href="003-read-access.html">003 Granularity of read access of data clients</a>
+<a class="dropdown-item" href="decisions/003-read-access.html">003 Granularity of read access of data clients</a>
 </li>
 <li>
-<a class="dropdown-item" href="004-threading-model.html">004 Data client threading model</a>
+<a class="dropdown-item" href="decisions/004-threading-model.html">004 Data client threading model</a>
 </li>
 <li>
-<a class="dropdown-item" href="005-error-codes.html">005 Error codes definition</a>
+<a class="dropdown-item" href="decisions/005-error-codes.html">005 Error codes definition</a>
 </li>
 <li>
-<a class="dropdown-item active" href="006-text-encoding.html">006 How should text values be encoded?</a>
+<a class="dropdown-item" href="decisions/006-text-encoding.html">006 How should text values be encoded?</a>
 </li>
 <li>
-<a class="dropdown-item" href="007-memory-allocation.html">007 What are the rules for memory management?</a>
+<a class="dropdown-item" href="decisions/007-memory-allocation.html">007 What are the rules for memory management?</a>
 </li>
 <li>
-<a class="dropdown-item" href="008-configuration-structure.html">008 What are the common requirements for the data client configuration?</a>
+<a class="dropdown-item" href="decisions/008-configuration-structure.html">008 What are the common requirements for the data client configuration?</a>
 </li>
 <li>
-<a class="dropdown-item" href="009-data-client-model-access.html">009 data client model access</a>
+<a class="dropdown-item" href="decisions/009-data-client-model-access.html">009 data client model access</a>
 </li>
 <li>
-<a class="dropdown-item" href="010-opc-ua-data-source-integration.html">010 OPC UA data source integration</a>
+<a class="dropdown-item" href="decisions/010-opc-ua-data-source-integration.html">010 OPC UA data source integration</a>
 </li>
 </ul>
 </li>
@@ -79,12 +79,12 @@
                             </a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="005-error-codes.html" rel="prev">
+<a class="nav-link" href="index.html" rel="prev">
 <i class="fa fa-arrow-left"></i> Previous
                                 </a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="007-memory-allocation.html" rel="next">
+<a class="nav-link" href="decisions/001-dataclient-interface-type.html" rel="next">
                                     Next <i class="fa fa-arrow-right"></i>
 </a>
 </li>
@@ -102,17 +102,21 @@
 </div>
 <div class="navbar-collapse collapse card bg-secondary" id="toc-collapse">
 <ul class="nav flex-column">
-<li class="nav-item" data-level="1"><a class="nav-link" href="#006-how-should-text-values-be-encoded">006 How should text values be encoded?</a>
+<li class="nav-item" data-level="1"><a class="nav-link" href="#changelog">Changelog</a>
 <ul class="nav flex-column">
-<li class="nav-item" data-level="2"><a class="nav-link" href="#context-and-problem-statement">Context and Problem Statement</a>
-<ul class="nav flex-column">
-</ul>
-</li>
-<li class="nav-item" data-level="2"><a class="nav-link" href="#decision-outcome">Decision outcome</a>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#future-changes">Future changes</a>
 <ul class="nav flex-column">
 </ul>
 </li>
-<li class="nav-item" data-level="2"><a class="nav-link" href="#pros-and-cons-of-the-options">Pros and Cons of the Options</a>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#current-version">Current Version</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#release-090">Release 0.9.0</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#pg-meeting-20210906">PG Meeting 2021/09/06</a>
 <ul class="nav flex-column">
 </ul>
 </li>
@@ -122,34 +126,36 @@
 </div>
 </div></div>
 <div class="col-md-9" role="main">
-<h1 id="006-how-should-text-values-be-encoded">006 How should text values be encoded?</h1>
+<h1 id="changelog">Changelog</h1>
+<h2 id="future-changes">Future changes</h2>
 <ul>
-<li>Status: accepted</li>
-<li>Deciders: partners</li>
+<li>standard events</li>
+<li>behavior of alarms at connect/reconnect</li>
+<li>sampling-rate</li>
+<li>unregister_* methods</li>
+<li>WIP: proposal timeout/progress/cancel</li>
+<li>WIP: proposal error codes</li>
+<li>WIP: data client items metadata</li>
 </ul>
-<h2 id="context-and-problem-statement">Context and Problem Statement</h2>
-<p>When transfering text values and identifiers it is important to have a common meaning of the character values to avoid wrong presentation to the user and non matching identifiers.</p>
-<h2 id="decision-outcome">Decision outcome</h2>
-<p>Arrays of <code>char</code> which represent text values are encoded as UTF-8.</p>
-<p>No plausible alternatives were presented.</p>
-<h2 id="pros-and-cons-of-the-options">Pros and Cons of the Options</h2>
-<h3 id="ascii-or-latin1-codepage">ASCII or Latin1 Codepage</h3>
+<h2 id="current-version">Current Version</h2>
 <ul>
-<li>Bad, because a limitation to a specific 8-bit charater set does not meet the requirements of modern internationalized software and is not compatible with the OPC-UA specification.</li>
+<li>consistent method signatures (return a <code>TEK_SA_RESULT</code>, generated handles etc. passed as out parameter)</li>
+<li>all array dimensions and counts now have type <code>uint32_t</code> (as <code>size_t</code>is implementation defined)</li>
+<li>introduced <code>struct tek_sa_configuration</code> which defines the global timeout value (and may be extended later)</li>
+<li>defined struct member offsets and check them at compile time</li>
+<li>verified standard ISO/IEC 9899:1990 (C90) and ISO/IEC 14882:1998 (C++98) conformance</li>
+<li>improved documentation</li>
+<li>code formatting rules created and applied</li>
 </ul>
-<h3 id="utf-8">UTF-8</h3>
+<h2 id="release-090">Release 0.9.0</h2>
 <ul>
-<li>Good, because not transcoding is needed when sending it to th OPC-UA server.</li>
+<li>published generated documentation</li>
+<li>improved and extended documentation</li>
+<li>restructured documentation of decisions concerning the API architecture</li>
+<li>documentation of all API items</li>
+<li>consistent naming off all API items (<code>tek_sa_</code> resp. <code>TEK_SA_</code>)</li>
 </ul>
-<h3 id="utf-16">UTF-16</h3>
-<ul>
-<li>Bad, because it consumes more memory.</li>
-<li>Bad, because 16 bit char type is not really compatible.</li>
-</ul>
-<h3 id="utf-32">UTF-32</h3>
-<ul>
-<li>Bad, because of even more memory consumption.</li>
-</ul></div>
+<h2 id="pg-meeting-20210906">PG Meeting 2021/09/06</h2></div>
 </div>
 </div>
 <footer class="col-md-12">
@@ -158,11 +164,11 @@
 <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
 </footer>
 <script>
-            var base_url = "..",
+            var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-<script defer="" src="../js/base.js"></script>
-<script defer="" src="../search/main.js"></script>
+<script defer="" src="js/base.js"></script>
+<script defer="" src="search/main.js"></script>
 <div aria-hidden="true" aria-labelledby="searchModalLabel" class="modal" id="mkdocs_search_modal" role="dialog" tabindex="-1">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">

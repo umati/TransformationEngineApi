@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://transformationengine.umati.org/changelog.html</loc>
+         <lastmod>2021-10-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://transformationengine.umati.org/decisions/001-dataclient-interface-type.html</loc>
          <lastmod>2021-10-14</lastmod>
          <changefreq>daily</changefreq>
