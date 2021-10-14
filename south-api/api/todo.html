@@ -88,37 +88,30 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Page <a class="el" href="KnownIssues.html">Known issues</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000002"></a>[D] A possibility to unregister fields, methods, events etc. is needed.</p>
-<p class="interdd"><a class="anchor" id="_todo000003"></a>[D] A possibility to define the sampling interval of subscribed fields is needed.</p>
-<p class="interdd"><a class="anchor" id="_todo000004"></a>[D, TEAM] We need a mechanism to transfer metadata from the controller/DC to the TEK see Teams/Allgemein 15.9.2021</p>
-<p class="interdd"><a class="anchor" id="_todo000005"></a>[C, MIG] mkdocs/doxybook2 output can not handle union</p>
-<p class="interdd"><a class="anchor" id="_todo000006"></a>[C, MIG] mkdocs/doxybook2 output can not handle typedefs</p>
-<p class="interdd"><a class="anchor" id="_todo000007"></a>[C, MIG] mkdocs/doxybook2 output can not handle function pointers </p>
-<p class="enddd"><a class="anchor" id="_todo000001"></a>[B, JF] A struct tek_configuration is needed, which contains e.g. the global request timeout value. </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000001"></a>[D] A possibility to unregister fields, methods, events etc. is needed.</p>
+<p class="interdd"><a class="anchor" id="_todo000002"></a>[D] A possibility to define the sampling interval of subscribed fields is needed.</p>
+<p class="interdd"><a class="anchor" id="_todo000003"></a>[D, TEAM] We need a mechanism to transfer metadata from the controller/DC to the TEK see Teams/Allgemein 15.9.2021</p>
+<p class="interdd"><a class="anchor" id="_todo000004"></a>[C, MIG] mkdocs/doxybook2 output can not handle union</p>
+<p class="interdd"><a class="anchor" id="_todo000005"></a>[C, MIG] mkdocs/doxybook2 output can not handle typedefs</p>
+<p class="enddd"><a class="anchor" id="_todo000006"></a>[C, MIG] mkdocs/doxybook2 output can not handle function pointers  </p>
 </dd>
-<dt>Class <a class="el" href="group__DEF.html">tek_sa_complex_data_array</a>  </dt>
-<dd><a class="anchor" id="_todo000008"></a>[B, TEAM] should this struct contain the number of bytes in <code>data</code> for sanity checks?  </dd>
-<dt>Class <a class="el" href="group__DEF.html">tek_sa_complex_data_matrix</a>  </dt>
-<dd><a class="anchor" id="_todo000009"></a>[B, TEAM] should this struct contain the number of bytes in <code>data</code> for sanity checks?  </dd>
 <dt>Global <a class="el" href="structtek__sa__data__client.html#a687764fb7beff7727b4a564a2056760e">tek_sa_data_client::read_fields</a>  )(tek_sa_data_client_handle dc, uint64_t request_id, const tek_sa_field_handle items_to_read[], uint32_t number_of_items, bool do_not_block)</dt>
-<dd><a class="anchor" id="_todo000011"></a>[B, TEAM] define error values of read function </dd>
+<dd><a class="anchor" id="_todo000007"></a>[B, TEAM] define error values of read function </dd>
 <dt>Global <a class="el" href="structtek__sa__data__client.html#a3a553f3f77d4abea1959777d19ac71f9">tek_sa_data_client::subscribe</a>  )(tek_sa_data_client_handle dc, const tek_sa_field_handle items_to_subscribe[], uint32_t number_of_items)</dt>
-<dd><a class="anchor" id="_todo000013"></a>[D, TEAM] add sampling rate parameter </dd>
+<dd><a class="anchor" id="_todo000009"></a>[D, TEAM] add sampling rate parameter </dd>
 <dt>Global <a class="el" href="structtek__sa__data__client.html#a5f5dbcfb1d277afe4fa9c3cfd63e9dde">tek_sa_data_client::write_fields</a>  )(tek_sa_data_client_handle dc, uint64_t request_id, const struct <a class="el" href="group__DEF.html#structtek__sa__field__write__request" title="Structure to encapsulate the parameters of a write field request.">tek_sa_field_write_request</a> items_to_write[], uint32_t number_of_items, bool do_not_block)</dt>
-<dd><a class="anchor" id="_todo000012"></a>[B, TEAM] should the data client call a progress function if the operation needs more time?  </dd>
-<dt>Class <a class="el" href="structtek__sa__transformation__engine.html">tek_sa_transformation_engine</a>  </dt>
-<dd><a class="anchor" id="_todo000010"></a>[A, TEAM] inconsistent register* methods signatures: always return error code or handle </dd>
+<dd><a class="anchor" id="_todo000008"></a>[B, TEAM] should the data client call a progress function if the operation needs more time?  </dd>
 <dt>Global <a class="el" href="structtek__sa__transformation__engine.html#a5c8abd1e3139d3da7a7eae8cdc96e4ec">tek_sa_transformation_engine::get_global_event</a>  )(const char *name)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000015"></a>[C, TEAM] define the predefined events </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000011"></a>[C, TEAM] define the predefined events </p>
 <p class="interdd"></p>
 <p class="enddd">[C, TEAM] define return value when event with given name does not exist? </p>
 </dd>
 <dt>Global <a class="el" href="structtek__sa__transformation__engine.html#a46da1466a222356147c43f6555a7f222">tek_sa_transformation_engine::read_progress</a>  )(tek_sa_data_client_handle dc, uint64_t request_id, uint64_t progress)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000016"></a>[B, TEAM] when should a data client report progress?</p>
-<p class="enddd"><a class="anchor" id="_todo000017"></a>[B, TEAM] when can the TEK stop the client (after progress was not reported)?  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000012"></a>[B, TEAM] when should a data client report progress?</p>
+<p class="enddd"><a class="anchor" id="_todo000013"></a>[B, TEAM] when can the TEK stop the client (after progress was not reported)?  </p>
 </dd>
 <dt>Global <a class="el" href="structtek__sa__transformation__engine.html#a5cb4f776a5e7954b424b37dfb337a274">tek_sa_transformation_engine::set_alarm</a>  )(tek_sa_data_client_handle dc, const tek_sa_alarm_handle alarm)</dt>
-<dd><a class="anchor" id="_todo000014"></a>[C, TEAM] called by data_client after connect, regardless of "acknowledge" calls during previous connection? </dd>
+<dd><a class="anchor" id="_todo000010"></a>[C, TEAM] called by data_client after connect, regardless of "acknowledge" calls during previous connection? </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
