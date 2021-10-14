@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.2-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">umati Transformation Engine - API documentation<span id="projectnumber">&#160;Release Candidate</span>
+   <div id="projectname"><a href="/">umati Transformation Engine - API documentation</a><span id="projectnumber">&#160;Release Candidate</span>
    </div>
    <div id="projectbrief">Transformation Engine API (south side)</div>
   </td>
@@ -96,22 +97,26 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <p class="enddd"><a class="anchor" id="_todo000006"></a>[C, MIG] mkdocs/doxybook2 output can not handle function pointers  </p>
 </dd>
 <dt>Global <a class="el" href="structtek__sa__data__client.html#a687764fb7beff7727b4a564a2056760e">tek_sa_data_client::read_fields</a>  )(tek_sa_data_client_handle dc, uint64_t request_id, const tek_sa_field_handle items_to_read[], uint32_t number_of_items, bool do_not_block)</dt>
-<dd><a class="anchor" id="_todo000007"></a>[B, TEAM] define error values of read function </dd>
+<dd><a class="anchor" id="_todo000009"></a>[B, TEAM] define error values of read function </dd>
 <dt>Global <a class="el" href="structtek__sa__data__client.html#a3a553f3f77d4abea1959777d19ac71f9">tek_sa_data_client::subscribe</a>  )(tek_sa_data_client_handle dc, const tek_sa_field_handle items_to_subscribe[], uint32_t number_of_items)</dt>
-<dd><a class="anchor" id="_todo000009"></a>[D, TEAM] add sampling rate parameter </dd>
+<dd><a class="anchor" id="_todo000011"></a>[D, TEAM] add sampling rate parameter </dd>
 <dt>Global <a class="el" href="structtek__sa__data__client.html#a5f5dbcfb1d277afe4fa9c3cfd63e9dde">tek_sa_data_client::write_fields</a>  )(tek_sa_data_client_handle dc, uint64_t request_id, const struct <a class="el" href="group__DEF.html#structtek__sa__field__write__request" title="Structure to encapsulate the parameters of a write field request.">tek_sa_field_write_request</a> items_to_write[], uint32_t number_of_items, bool do_not_block)</dt>
-<dd><a class="anchor" id="_todo000008"></a>[B, TEAM] should the data client call a progress function if the operation needs more time?  </dd>
+<dd><a class="anchor" id="_todo000010"></a>[B, TEAM] should the data client call a progress function if the operation needs more time?  </dd>
+<dt>Global <a class="el" href="group__DEF.html#a7379ffaf14cac5428ae53346cd4027ce">tek_sa_dc_event::event_type</a>  </dt>
+<dd><a class="anchor" id="_todo000007"></a>[A] Depending on the decision about the concept of invalid handles, this has to be removed.  </dd>
+<dt>Global <a class="el" href="group__DEF.html#a9dde69d39359191fed25fe6f2ec928e2">tek_sa_dc_event::source</a>  </dt>
+<dd><a class="anchor" id="_todo000008"></a>[A] At this point the concept of invalid handle is used but that concept was dropped  </dd>
 <dt>Global <a class="el" href="structtek__sa__transformation__engine.html#a5c8abd1e3139d3da7a7eae8cdc96e4ec">tek_sa_transformation_engine::get_global_event</a>  )(const char *name)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000011"></a>[C, TEAM] define the predefined events </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000013"></a>[C, TEAM] define the predefined events </p>
 <p class="interdd"></p>
 <p class="enddd">[C, TEAM] define return value when event with given name does not exist? </p>
 </dd>
 <dt>Global <a class="el" href="structtek__sa__transformation__engine.html#a46da1466a222356147c43f6555a7f222">tek_sa_transformation_engine::read_progress</a>  )(tek_sa_data_client_handle dc, uint64_t request_id, uint64_t progress)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000012"></a>[B, TEAM] when should a data client report progress?</p>
-<p class="enddd"><a class="anchor" id="_todo000013"></a>[B, TEAM] when can the TEK stop the client (after progress was not reported)?  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000014"></a>[B, TEAM] when should a data client report progress?</p>
+<p class="enddd"><a class="anchor" id="_todo000015"></a>[B, TEAM] when can the TEK stop the client (after progress was not reported)?  </p>
 </dd>
 <dt>Global <a class="el" href="structtek__sa__transformation__engine.html#a5cb4f776a5e7954b424b37dfb337a274">tek_sa_transformation_engine::set_alarm</a>  )(tek_sa_data_client_handle dc, const tek_sa_alarm_handle alarm)</dt>
-<dd><a class="anchor" id="_todo000010"></a>[C, TEAM] called by data_client after connect, regardless of "acknowledge" calls during previous connection? </dd>
+<dd><a class="anchor" id="_todo000012"></a>[C, TEAM] called by data_client after connect, regardless of "acknowledge" calls during previous connection? </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -119,7 +124,7 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Oct 14 2021 17:53:33 for umati Transformation Engine - API documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

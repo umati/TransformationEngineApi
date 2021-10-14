@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.2-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">umati Transformation Engine - API documentation<span id="projectnumber">&#160;Release Candidate</span>
+   <div id="projectname"><a href="/">umati Transformation Engine - API documentation</a><span id="projectnumber">&#160;Release Candidate</span>
    </div>
    <div id="projectbrief">Transformation Engine API (south side)</div>
   </td>
@@ -137,7 +138,7 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The interface of one instance of a data client. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01052">1052</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01057">1057</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="afa9f2faf14b4fb1264f7c662da39b4f7" name="afa9f2faf14b4fb1264f7c662da39b4f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa9f2faf14b4fb1264f7c662da39b4f7">&#9670;&nbsp;</a></span>register_features</h2>
@@ -162,7 +163,7 @@ Data Fields</h2></td></tr>
 <p >A data client implementation should evaluate the configuration (passed to <a class="el" href="structtek__sa__data__client__plugin.html#a6f9662a180c664f8123d9472556164bb" title="Allocates and initializes the data client with a configuration. Prepare callbacks in data_client.">tek_sa_data_client_plugin::data_client_new</a>) and register all known types fields, events, methods and alarms.</p>
 <p >A connection to the controller must not be established. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01070">1070</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01075">1075</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -183,7 +184,7 @@ Data Fields</h2></td></tr>
 <p >A data client implementation should connect to the data source and register additional features and capabilities.</p>
 <p >If the data client can not connect to the data source it should keep trying to connect after the method call completed but it should not block. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01084">1084</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01089">1089</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +203,7 @@ Data Fields</h2></td></tr>
 <p>Frees the data client and releases all its resources. </p>
 <p >Should be called by the TEK. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01091">1091</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01096">1096</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +239,7 @@ Data Fields</h2></td></tr>
 <a class="el" href="group__DEF.html#gaf213cfea82aba978642f2ec515df9676">TEK_SA_ERR_OUT_OF_MEMORY</a> when the data client can not allocate the data structures and resources to read the fields. </dd>
 <dd>
 any other error which applies to the read function </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>[B, TEAM] define error values of read function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>[B, TEAM] define error values of read function</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>It is mandatory that the data client does not block when called with parameter <code>do_not_block</code> set to <em>true</em>.</dd></dl>
 <p><a class="anchor" id="BlockingNonblocking"></a></p><dl class="section user"><dt>Usage of the Parameter <code>do_not_block</code> </dt><dd></dd></dl>
 <div class="plantumlgraph">
@@ -247,7 +248,7 @@ any other error which applies to the read function </dd></dl>
 Possible call sequences</div>
 </div>
  
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01189">1189</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01194">1194</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -274,9 +275,9 @@ Possible call sequences</div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>[B, TEAM] should the data client call a progress function if the operation needs more time? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>[B, TEAM] should the data client call a progress function if the operation needs more time? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01213">1213</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01218">1218</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +310,7 @@ Possible call sequences</div>
 <dl class="section return"><dt>Returns</dt><dd>An information about the success or failure of the operation.</dd></dl>
 <p>The data is not yet passed to this method directly but sent from the data client in chunks to the <a class="el" href="structtek__sa__transformation__engine.html#ad020e2c28bc411a61fed4645da150ffe" title="Callback from the data client to the TEK signaling the next data chunk of the block transfer.">tek_sa_transformation_engine::block_read_data</a> callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01240">1240</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01245">1245</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +340,7 @@ Possible call sequences</div>
 <dl class="section return"><dt>Returns</dt><dd>An information about the success or failure of the operation.</dd></dl>
 <p>The data is not yet passed to this method directly but requested from the data client in chunks from the <a class="el" href="structtek__sa__transformation__engine.html#afbc551fa7b3249694e33718f3493713c" title="Callback from the data client to the TEK requesting another chunk to write to the data client.">tek_sa_transformation_engine::block_write_data</a> callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01267">1267</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01272">1272</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -364,10 +365,10 @@ Possible call sequences</div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>[D, TEAM] add sampling rate parameter</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>[D, TEAM] add sampling rate parameter</dd></dl>
 <p >The subscription mechanism is very easy compared to that of the OPC UA specification. The TEK can subscribe to each field only once and all changes are signaled by a call to the tek_sa_data_transformation_engine::notify_change callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01291">1291</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01296">1296</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +394,7 @@ Possible call sequences</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01305">1305</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01310">1310</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -423,7 +424,7 @@ Possible call sequences</div>
 </dl>
 <p>The outcome of the message call is returned in the <a class="el" href="structtek__sa__transformation__engine.html#aa513f32a70122cdf01b5c72cd37fd25b" title="Callback of a data client method call.">tek_sa_transformation_engine::call_method_result</a> callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01332">1332</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01337">1337</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +450,7 @@ Possible call sequences</div>
 </dl>
 <p>Called by TEK to signal triggered alarm has acknowledged by TEK consumer. The alarm may or may not be raised before with a call to <a class="el" href="structtek__sa__transformation__engine.html#a5cb4f776a5e7954b424b37dfb337a274" title="Sets an alarm.">tek_sa_transformation_engine::set_alarm</a>. When the alarm condition is not true anymore, then the data client implementation has to reset the alarm and call <a class="el" href="structtek__sa__transformation__engine.html#ab2d6625f5de460141d239906faf746c9" title="Clears/resets an alarm.">tek_sa_transformation_engine::reset_alarm</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01353">1353</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01358">1358</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +468,7 @@ Possible call sequences</div>
 
 <p>The handle that is passed as first parameter in all functions of this interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01364">1364</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="south__api_8h_source.html#l01369">1369</a> of file <a class="el" href="south__api_8h_source.html">south_api.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +481,7 @@ Possible call sequences</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structtek__sa__data__client.html">tek_sa_data_client</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Oct 14 2021 17:53:33 for umati Transformation Engine - API documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
