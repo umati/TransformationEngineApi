@@ -8,7 +8,7 @@ entity opcauservercontainer__1e6fa8e--><rect fill="#999999" height="71.2188" sty
 reverse link opcauservercontainer__1e6fa8e to tek__engine1__NorthApi__3553390--><path d="M136.5,107.6006 C136.5,138.1727 136.5,178.6447 136.5,208.871 " fill="none" id="opcauservercontainer__1e6fa8e-backto-tek__engine1__NorthApi__3553390" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="136.5,99.257,133.5,107.257,139.5,107.257,136.5,99.257" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="10" x="157" y="141.0918">[]</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="137.5" y="155.0605">[opcua]</text><!--MD5=[184d14e7eb416c3c522653c25cff863d]
 link tek__engine1__SouthApi__1fed012 to tek__dataclient__bb8560--><path d="M136.5,738.124 C136.5,762.015 136.5,792.1669 136.5,818.306 " fill="none" id="tek__engine1__SouthApi__1fed012-to-tek__dataclient__bb8560" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="136.5,826.6388,139.5,818.6388,133.5,818.6388,136.5,826.6388" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="10" x="147.5" y="780.0918">[]</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="30" x="137.5" y="794.0605">[tcp]</text><!--MD5=[1d5b4ab32e3ef0284842e85e730360cb]
 reverse link tek__engine1__NorthApi__3553390 to tek__engine1__transformationkernel__297b065--><path d="M136.5,302.0571 C136.5,340.9024 136.5,393.936 136.5,430.678 " fill="none" id="tek__engine1__NorthApi__3553390-backto-tek__engine1__transformationkernel__297b065" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="136.5,293.9943,133.5,301.9943,139.5,301.9943,136.5,293.9943" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="66" x="137.5" y="367.0918">North API</text><!--MD5=[5d46c29592373e5af241cd83f0b5c9da]
-link tek__engine1__transformationkernel__297b065 to tek__engine1__SouthApi__1fed012--><path d="M136.5,515.9943 C136.5,552.6669 136.5,605.6959 136.5,644.6014 " fill="none" id="tek__engine1__transformationkernel__297b065-to-tek__engine1__SouthApi__1fed012" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="136.5,652.678,139.5,644.678,133.5,644.678,136.5,652.678" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="68" x="137.5" y="589.0918">South API</text><rect fill="#FFFFFF" height="160.6719" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="159" x="77.5" y="941.4375"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="83.5" y="961.4326">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="146.5" y="961.4326"/><rect fill="#08427B" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="964.7344"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="87.5" y="977.7295">person</text><rect fill="#1168BD" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="981.0313"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="87.5" y="994.0264">system</text><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="997.3281"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="87.5" y="1010.3232">container</text><rect fill="#85BBF0" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="1013.625"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="87.5" y="1026.6201">component</text><rect fill="#686868" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="1029.9219"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="87.5" y="1042.917">external person</text><rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="1046.2188"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="87.5" y="1059.2139">external system</text><rect fill="#B3B3B3" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="1062.5156"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="87.5" y="1075.5107">external container</text><rect fill="#CCCCCC" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="1078.8125"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="87.5" y="1091.8076">external component</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="948.4375" y2="948.4375"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="964.7344" y2="964.7344"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="981.0313" y2="981.0313"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="997.3281" y2="997.3281"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1013.625" y2="1013.625"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1029.9219" y2="1029.9219"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1046.2188" y2="1046.2188"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1062.5156" y2="1062.5156"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1078.8125" y2="1078.8125"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1095.1094" y2="1095.1094"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="83.5" y1="948.4375" y2="1095.1094"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="230.5" x2="230.5" y1="948.4375" y2="1095.1094"/><!--MD5=[9b25605e60350c40d622b47d1e4aa515]
+link tek__engine1__transformationkernel__297b065 to tek__engine1__SouthApi__1fed012--><path d="M136.5,515.9943 C136.5,552.6669 136.5,605.6959 136.5,644.6014 " fill="none" id="tek__engine1__transformationkernel__297b065-to-tek__engine1__SouthApi__1fed012" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="136.5,652.678,139.5,644.678,133.5,644.678,136.5,652.678" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="68" x="137.5" y="589.0918">South API</text><rect fill="#FFFFFF" height="160.6719" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="159" x="77.5" y="941.4375"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="83.5" y="961.4326">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="146.5" y="961.4326"/><rect fill="#08427B" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="964.7344"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="87.5" y="977.7295">person</text><rect fill="#1168BD" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="981.0313"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="87.5" y="994.0264">system</text><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="997.3281"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="87.5" y="1010.3232">container</text><rect fill="#85BBF0" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="1013.625"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="87.5" y="1026.6201">component</text><rect fill="#686868" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="1029.9219"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="87.5" y="1042.917">external person</text><rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="1046.2188"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="87.5" y="1059.2139">external system</text><rect fill="#B3B3B3" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="1062.5156"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="87.5" y="1075.5107">external container</text><rect fill="#CCCCCC" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="83.5" y="1078.8125"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="87.5" y="1091.8076">external component</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="948.4375" y2="948.4375"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="964.7344" y2="964.7344"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="981.0313" y2="981.0313"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="997.3281" y2="997.3281"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1013.625" y2="1013.625"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1029.9219" y2="1029.9219"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1046.2188" y2="1046.2188"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1062.5156" y2="1062.5156"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1078.8125" y2="1078.8125"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="230.5" y1="1095.1094" y2="1095.1094"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="83.5" x2="83.5" y1="948.4375" y2="1095.1094"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="230.5" x2="230.5" y1="948.4375" y2="1095.1094"/><!--MD5=[7600773cdb3d5027c5d2d134a79d66b6]
 @startuml
 !include <C4/C4_Component>
 
@@ -31,6 +31,8 @@ Rel_Down(tek__engine1__transformationkernel__297b065, tek__engine1__SouthApi__1f
 @enduml
 
 @startuml
+
+
 
 
 
@@ -106,6 +108,17 @@ skinparam rectangle<<boundary>> {
     BackgroundColor transparent
     BorderStyle dashed
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -537,6 +550,7 @@ skinparam person<<external_container>> {
 
 
 
+
 skinparam rectangle<<component>> {
     StereotypeFontColor #000000
     FontColor #000000
@@ -613,6 +627,7 @@ skinparam person<<external_component>> {
 
 
 
+
 title tek - engine-1 - Components
 
 hide stereotype
@@ -641,7 +656,7 @@ tek__engine1__transformationkernel__297b065 -UP->> tek__engine1__NorthApi__35533
 tek__engine1__transformationkernel__297b065 -DOWN->> tek__engine1__SouthApi__1fed012 : **South API**
 @enduml
 
-PlantUML version 1.2021.12(Tue Oct 05 16:01:58 UTC 2021)
+PlantUML version 1.2021.14(Fri Nov 12 16:46:50 UTC 2021)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM
