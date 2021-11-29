@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="VDW-Forschungsinstitut e.V." name="author"/>
+<link href="https://transformationengine.umati.org/decisions/011-metadata.html" rel="canonical"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>011 Metadata - umati Transformation Engine</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<script defer="" src="../js/jquery-1.10.2.min.js"></script>
+<script defer="" src="../js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="../pdf/TEK-SouthAPI.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
+<body>
+<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="https://transformationengine.umati.org/">umati Transformation Engine</a>
+<!-- Expander button -->
+<button class="navbar-toggler" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse" id="navbar-collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li class="navitem">
+<a class="nav-link" href="../index.html">Overview</a>
+</li>
+<li class="navitem">
+<a class="nav-link" href="../changelog.html">Changelog</a>
+</li>
+<li class="dropdown active">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Decisions <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="001-dataclient-interface-type.html">001 Type of the interface (Socket, shared library or managed code)</a>
+</li>
+<li>
+<a class="dropdown-item" href="002-api-artifacts.html">002 API artifacts</a>
+</li>
+<li>
+<a class="dropdown-item" href="003-read-access.html">003 Granularity of read access of data clients</a>
+</li>
+<li>
+<a class="dropdown-item" href="004-threading-model.html">004 Data client threading model</a>
+</li>
+<li>
+<a class="dropdown-item" href="005-error-codes.html">005 Error codes definition</a>
+</li>
+<li>
+<a class="dropdown-item" href="006-text-encoding.html">006 How should text values be encoded?</a>
+</li>
+<li>
+<a class="dropdown-item" href="007-memory-allocation.html">007 What are the rules for memory management?</a>
+</li>
+<li>
+<a class="dropdown-item" href="008-configuration-structure.html">008 What are the common requirements for the data client configuration?</a>
+</li>
+<li>
+<a class="dropdown-item" href="009-data-client-model-access.html">009 data client model access</a>
+</li>
+<li>
+<a class="dropdown-item" href="010-opc-ua-data-source-integration.html">010 OPC UA data source integration</a>
+</li>
+<li>
+<a class="dropdown-item active" href="011-metadata.html">011 Metadata</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" data-target="#mkdocs_search_modal" data-toggle="modal" href="#">
+<i class="fa fa-search"></i> Search
+                            </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="010-opc-ua-data-source-integration.html" rel="prev">
+<i class="fa fa-arrow-left"></i> Previous
+                                </a>
+</li>
+<li class="nav-item">
+<a class="nav-link disabled" rel="next">
+                                    Next <i class="fa fa-arrow-right"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+<div class="navbar-header">
+<button class="navbar-toggler collapsed" data-target="#toc-collapse" data-toggle="collapse" title="Table of Contents" type="button">
+<span class="fa fa-angle-down"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse card bg-secondary" id="toc-collapse">
+<ul class="nav flex-column">
+<li class="nav-item" data-level="1"><a class="nav-link" href="#011-metadata">011 Metadata</a>
+<ul class="nav flex-column">
+<li class="nav-item" data-level="2"><a class="nav-link" href="#context-and-problem-statement">Context and Problem Statement</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#decision-drivers">Decision Drivers</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#considered-options">Considered Options</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#decision-outcome">Decision Outcome</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#pros-and-cons-of-the-options">Pros and Cons of the Options</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div></div>
+<div class="col-md-9" role="main">
+<h1 id="011-metadata">011 Metadata</h1>
+<ul>
+<li>Status: WIP</li>
+<li>Deciders: tbd.</li>
+</ul>
+<h2 id="context-and-problem-statement">Context and Problem Statement</h2>
+<p>The data source contains metadata information about its variables such as range or engineering units.
+The South API should provide the means to transport the information to the TEK.
+The TEK may expose the information in a OPC UA compliant fashion through the North API in the OPC UA server. For example, the range of a variable is encoded as AnalogItem in the OPC UA server exposing the range information using OPC UA datatype "Range" in the property "EURange" of the variable.</p>
+<p>In addition, TEK scripts may use the information to perform specific actions. For example, an event may be fired when a data point is not in its range (metadata range information) or a temperature will always be converted to Celsius.</p>
+<p>A variable may contain structured data. The API should allow to associate metadata with some fields, for example, the member 'temperature' of the struct has unit '° Celsius'.</p>
+<p>The API should provide the means for the TEK to identify which metadata of a variable is associated with each read of the variable, i.e., data point at time X was a temperature in Celsius, data point at time Y was a temperature in Fahrenheit.</p>
+<h2 id="decision-drivers">Decision Drivers</h2>
+<ul>
+<li>Define the means to transport the same metadata information, e.g. unit, from multiple data clients uniformly to the TEK</li>
+<li>Allow extension of additional metadata "types" without breaking the API or ABI</li>
+</ul>
+<h2 id="considered-options">Considered Options</h2>
+<h3 id="option-1-meta-data-content-struct-provided-as-parameter-for-register_field-method-and-as-part-of-tek_sa_struct_field_type_definition">Option 1: meta data content struct provided as parameter for "register_field" method and as part of "tek_sa_struct_field_type_definition"</h3>
+<p>The API will expose a metadata struct that contains the metadata information that can be set by data client. The metadata are set during register field.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">struct</span> <span class="nc">tek_sa_metadata</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">range_min</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">range_max</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">unit</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="k">struct</span> <span class="nc">tek_sa_api</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// ...</span>
+<span class="w">  </span><span class="n">TEK_SA_RESULT</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">register_field</span><span class="p">)(</span><span class="n">tek_sa_data_client_handle</span><span class="w"> </span><span class="n">dc</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                  </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                  </span><span class="k">enum</span><span class="w"> </span><span class="n">tek_sa_field_attributes</span><span class="w"> </span><span class="n">attributes</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                  </span><span class="k">enum</span><span class="w"> </span><span class="n">tek_sa_variant_type</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                  </span><span class="n">tek_sa_field_handle</span><span class="o">*</span><span class="w"> </span><span class="n">new_field_handle</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                  </span><span class="k">struct</span> <span class="nc">tek_sa_metadata</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">*</span><span class="n">metadata</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// ...</span>
+<span class="p">};</span><span class="w"></span>
+</code></pre></div>
+<h3 id="option-2-keyvalue-pair-solution-without-semantic">Option 2: key/value pair solution without semantic</h3>
+<p>The data client can set the metadata using a metadata key and a value per field. To remove a metadata information a null value can be set.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">struct</span> <span class="nc">tek_sa_api</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">update_metadata</span><span class="p">(</span><span class="n">data_client_handle</span><span class="w"> </span><span class="n">dc</span><span class="p">,</span><span class="w"> </span><span class="n">field_handle</span><span class="w"> </span><span class="n">fh</span><span class="p">,</span><span class="w"> </span><span class="n">tek_metadata_key</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="k">struct</span> <span class="nc">tek_sa_variant</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">*</span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+</code></pre></div>
+<p>The key may be predefined values, e.g. int with different constants, or a name with optional reserved strings, e.g. "RANGE_MIN", "RANGE_MAX".</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">// with int constants</span>
+<span class="k">typedef</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">tek_metadata_key</span><span class="p">;</span><span class="w"></span>
+
+<span class="cp">#define TEK_METADATA_KEY_RANGE_MIN 1</span>
+<span class="cp">#define TEK_METADATA_KEY_RANGE_MAX 2</span>
+<span class="cp">#define TEK_METADATA_KEY_UNIT 3</span>
+
+<span class="c1">// with string constants</span>
+<span class="k">typedef</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">tek_metadata_key</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">TEK_METADATA_KEY_RANGE_MIN</span><span class="w"> </span><span class="s">"RANGE_MIN"</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">TEK_METADATA_KEY_RANGE_MAX</span><span class="w"> </span><span class="s">"RANGE_MAX"</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">TEK_METADATA_KEY_UNIT</span><span class="w"> </span><span class="s">"RANGE_UNIT"</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<p>TODO clarify when the update_metadata function should or must be called.</p>
+<h2 id="decision-outcome">Decision Outcome</h2>
+<p>tbd.</p>
+<h2 id="pros-and-cons-of-the-options">Pros and Cons of the Options</h2>
+<h3 id="option-1">Option 1</h3>
+<ul>
+<li>Good, because metadata can be set at simply and unambiguously in through the struct.</li>
+<li>Bad, because adding new metadata types breaks the API.</li>
+<li>Bad, because metadata information may not yet be available when register_field is called. Metadata may only be available when the data client is connected to the data source.</li>
+<li>Bad, because metadata information cannot be updated.</li>
+<li>Bad, because metadata cannot be stored for a member of a struct.</li>
+</ul>
+<h3 id="option-2">Option 2</h3>
+<ul>
+<li>Good, because extending new metadata types do not break the API.</li>
+<li>Good, because updating metadata can be performed during execution of the TEK.</li>
+<li>Bad, because data client may use keys that are not known to the TEK.</li>
+</ul></div>
+</div>
+</div>
+<footer class="col-md-12">
+<hr/>
+<p>Copyright © 2021</p>
+<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+</footer>
+<script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+<script defer="" src="../js/base.js"></script>
+<script defer="" src="../search/main.js"></script>
+<div aria-hidden="true" aria-labelledby="searchModalLabel" class="modal" id="mkdocs_search_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="searchModalLabel">Search</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<p>From here you can search these documents. Enter your search terms below.</p>
+<form>
+<div class="form-group">
+<input class="form-control" id="mkdocs-search-query" placeholder="Search..." title="Type search term here" type="search"/>
+</div>
+</form>
+<div data-no-results-text="No results found" id="mkdocs-search-results"></div>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
